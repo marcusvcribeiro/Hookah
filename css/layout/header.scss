@@ -1,0 +1,53 @@
+/*HEADER*/
+header {
+    width: 100%;
+    position: absolute;
+    height: 90px;
+    background-color: #000;
+    border-top: 4px solid rebeccapurple;
+
+}
+
+.container {
+    position: relative;
+
+    h1 {
+        float: left;
+        display: block;
+        color: #fff;
+        width: 30%;
+    }
+
+    .menu-principal {
+        color: red;
+        position: absolute;
+        right: 0;
+        top: 0.6em;
+        font-size: 1.2em;
+        width: 50%;
+
+        ul {
+            li {
+                display: inline-block;
+                padding: 0 0.6em;   
+
+                a {
+                    text-decoration: none;
+                    color: red;
+
+                    &:hover {
+                        color: rebeccapurple;
+                    }
+                }               
+            }         
+        }
+
+    }
+}
+
+@media(max-width: 420px){
+   
+}
+@media(max-width: 375px){
+   
+}

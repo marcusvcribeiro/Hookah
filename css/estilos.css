@@ -1,0 +1,38 @@
+/**BASE**/
+body {
+  font-family: "Roboto Slab", serif; }
+
+.container {
+  width: 940px;
+  margin: 0 auto; }
+
+/*HEADER*/
+header {
+  width: 100%;
+  position: absolute;
+  height: 90px;
+  background-color: #000;
+  border-top: 4px solid rebeccapurple; }
+
+.container {
+  position: relative; }
+  .container h1 {
+    float: left;
+    display: block;
+    color: #fff;
+    width: 30%; }
+  .container .menu-principal {
+    color: red;
+    position: absolute;
+    right: 0;
+    top: 0.6em;
+    font-size: 1.2em;
+    width: 50%; }
+    .container .menu-principal ul li {
+      display: inline-block;
+      padding: 0 0.6em; }
+      .container .menu-principal ul li a {
+        text-decoration: none;
+        color: red; }
+        .container .menu-principal ul li a:hover {
+          color: rebeccapurple; }
