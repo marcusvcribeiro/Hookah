@@ -1,0 +1,33 @@
+.parallaxNarguile{
+  background: url('../images/parallaxNarguile.jpg') no-repeat center;
+  height: 40em;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    font-size: 4em;
+    text-align: center;
+    color:#FFF;
+  }
+}
+.about {
+  height: 40em;
+  width: 100%;
+  background-color: red;
+  .aboutDescricao{
+    background-color: #ece9dc;
+    height: 100%;
+
+    h1{
+      font-size: 3.4em;
+      margin-left: 4.8em;
+    }
+  }
+  .aboutImg{
+    background: url('../images/11.jpg');
+    background-size: cover;
+    height: 100%;
+  }
+}

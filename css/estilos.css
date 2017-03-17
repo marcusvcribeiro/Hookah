@@ -73,16 +73,17 @@ ul.nav-links li.icon {
   ul.nav-links li:not(:first-child) {
     display: none;
     padding-top: 40px; }
+
   ul.nav-links li.icon {
     float: right;
     display: block; } }
-
 @media (max-width: 680px) {
   .nav {
     margin: auto;
     background-color: #000;
     min-height: 7em;
     overflow: hidden; }
+
   .logo {
     background: url(../images/logo.png) transparent no-repeat center top;
     background-size: 100%;
@@ -94,6 +95,7 @@ ul.nav-links li.icon {
     position: absolute;
     z-index: 9;
     top: 1.2em; }
+
   .glyphicon2 {
     position: relative;
     top: 2.6em;
@@ -108,27 +110,71 @@ ul.nav-links li.icon {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+
   ul.nav-links {
     margin: 0; }
+
   ul.nav-links.responsive {
     position: relative;
     padding-top: 30%;
     transition: 1.3s;
     text-align: center; }
+
   ul.nav-links.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
     padding-bottom: 20px; }
+
   ul.nav-links.responsive li:first-child {
     float: none;
     display: inline; }
+
   ul.nav-links.responsive li {
     float: none;
     display: inline; }
+
   ul.nav-links.responsive li a {
     display: block;
     text-align: center; }
+
   ul.nav-links.responsive li a {
     display: block;
     text-align: center; } }
+.parallaxNarguile {
+  background: url("../images/parallaxNarguile.jpg") no-repeat center;
+  height: 40em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .parallaxNarguile p {
+    font-size: 4em;
+    text-align: center;
+    color: #FFF; }
+
+.about {
+  height: 40em;
+  width: 100%;
+  background-color: red; }
+  .about .aboutDescricao {
+    background-color: #ece9dc;
+    height: 100%; }
+    .about .aboutDescricao h1 {
+      font-size: 3.4em;
+      margin-left: 4.8em; }
+  .about .aboutImg {
+    background: url("../images/11.jpg");
+    background-size: cover;
+    height: 100%; }
+
+.galeria {
+  height: 47em;
+  background: #ccc; }
+  .galeria .topoGaleria {
+    height: 10em;
+    background: #000; }
+    .galeria .topoGaleria h3 {
+      font-size: 4em;
+      text-align: center;
+      color: #fff; }
