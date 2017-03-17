@@ -7,23 +7,45 @@
         <link href="css/estilos.css" rel="stylesheet">
         <link href="css/base/normalize.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
 
-     <header>
-         <div class="container">
-             <h1>
-                 Hookah
-             </h1>
-             <nav class="menu-principal">
-                 <ul>
-                     <li><a href="">sobre</a></li>
-                     <li><a href="">cardápio</a></li>
-                     <li><a href="">a experiência</a></li>
-                     <li><a href="">contato</a></li>
-                 </ul>
-             </nav>
-         </div>
-     </header>    
+     <header id="topo" class="header-container">
+         <div class="fundo1"></div>
+        <nav class="nav">
+            <div class="pull-left logo"></div>
+            <a href="javascript:void(0);" onclick="navBarEffect()">
+                <div class="icone-menu glyphicon2 glyphicon-menu-hamburger"></div>
+            </a>
+            <ul class="nav-links" id="topNav">
+                <li></li>
+                <li><a href="#news">sobre</a></li>
+                <li><a href="#experience">a experiência</a></li>
+                <li><a href="#about">cardápio</a></li>
+                <li><a href="#contact">contato</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <script>
+    function navBarEffect() {
+        var nav = document.getElementById("topNav");
+        if (nav.className === "nav-links") {
+            nav.className += " responsive";
+        } else {
+            nav.className = "nav-links";
+        }
+    }
+    </script>
+    </script>
+    <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script src="css/jquery.js"></script>
+    <script src="css/menu-responsivo.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>                         
     </body>
 </html>
