@@ -1,13 +1,129 @@
 .galeria {
-  height: 47em;
+  height: 85em;
   background: #ccc;
+
   .topoGaleria{
-    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 14em;
     background: #000;
     h3{
       font-size: 4em;
       text-align: center;
       color: #fff;
     }
+  }
+  .fotoGaleria{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .textoFoto{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      justify-content: space-around;
+      font-size: 5em;
+      text-align: center;
+      opacity: 0;
+    }
+    .textoFoto:hover{
+      opacity: 1;
+      color: red;
+    }
+    .foto1{
+      width: 33%;
+      height: 330px;
+      background: url('../images/foto1.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto1:hover{
+      opacity: .6;
+    }
+    .foto2{
+      width: 34%;
+      height: 330px;
+      background: url('../images/foto2.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto2:hover{
+      opacity: .6;
+    }
+    .foto3{
+      width: 33%;
+      height: 330px;
+      background: url('../images/foto3.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto3:hover{
+      opacity: .6;
+    }
+    .foto4{
+      width: 33%;
+      height: 330px;
+      background: url('../images/foto4.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto4:hover{
+      opacity: .6;
+    }
+    .foto5{
+      width: 34%;
+      height: 330px;
+      background: url('../images/foto5.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto5:hover{
+      opacity: .6;
+    }
+    .foto6{
+      width: 33%;
+      height: 330px;
+      background: url('../images/foto6.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto6:hover{
+      opacity: .6;
+    }
+    .foto7{
+      width: 25%;
+      height: 330px;
+      background: url('../images/foto7.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto7:hover{
+      opacity: .6;
+    }
+    .foto8{
+      width: 25%;
+      height: 330px;
+      background: url('../images/foto8.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto8:hover{
+      opacity: .6;
+    }
+    .foto9{
+      width: 25%;
+      height: 330px;
+      background: url('../images/foto9.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto9:hover{
+      opacity: .6;
+    }
+    .foto10{
+      width: 25%;
+      height: 330px;
+      background: url('../images/foto10.jpg') no-repeat center;
+      background-size: cover;
+    }
+    .foto10:hover{
+      opacity: .6;
+    }
+
   }
 }
