@@ -72,17 +72,16 @@ ul.nav-links li.icon {
   ul.nav-links li:not(:first-child) {
     display: none;
     padding-top: 40px; }
-
   ul.nav-links li.icon {
     float: right;
     display: block; } }
+
 @media (max-width: 680px) {
   .nav {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.6);
     min-height: 7em;
     overflow: hidden; }
-
   .logo {
     background: url(../images/logo.png) transparent no-repeat center top;
     background-size: 100%;
@@ -94,7 +93,6 @@ ul.nav-links li.icon {
     position: absolute;
     z-index: 9;
     top: 1.2em; }
-
   .glyphicon2 {
     position: relative;
     top: 2.6em;
@@ -109,37 +107,31 @@ ul.nav-links li.icon {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-
   ul.nav-links {
     margin: 0; }
-
   ul.nav-links.responsive {
     position: relative;
     padding-top: 30%;
     transition: 1.3s;
     text-align: center; }
-
   ul.nav-links.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
     padding-bottom: 20px; }
-
   ul.nav-links.responsive li:first-child {
     float: none;
     display: inline; }
-
   ul.nav-links.responsive li {
     float: none;
     display: inline; }
-
   ul.nav-links.responsive li a {
     display: block;
     text-align: center; }
-
   ul.nav-links.responsive li a {
     display: block;
     text-align: center; } }
+
 .Footer {
   background: #000;
   height: 30em; }
@@ -161,21 +153,43 @@ ul.nav-links li.icon {
 
 .about {
   height: 40em;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
   .about .aboutDescricao {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
     background-color: #ece9dc;
-    height: 100%; }
+    height: 100%;
+    width: 50%;
+    padding: 2em; }
     .about .aboutDescricao h1 {
       font-size: 3.4em; }
     .about .aboutDescricao p {
       font-size: 1.5em; }
   .about .aboutImg {
     background: url("../images/11.jpg");
-    background-size: cover;
-    height: 100%; }
+    background-size: 100%;
+    height: 100%;
+    width: 50%; }
+
+@media (max-width: 420px) {
+  .parallaxNarguile {
+    height: 20em; }
+    .parallaxNarguile p {
+      font-size: 1.8em; }
+  .about {
+    height: auto;
+    width: 100%;
+    flex-flow: row wrap; }
+    .about .aboutDescricao {
+      height: auto;
+      width: auto;
+      padding: 1.3em; }
+      .about .aboutDescricao h1 {
+        font-size: 2.4em; }
+      .about .aboutDescricao p {
+        font-size: 1em; }
+    .about .aboutImg {
+      display: none; } }
 
 .galeria {
   height: 85em;
