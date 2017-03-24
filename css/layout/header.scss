@@ -12,8 +12,9 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
   min-height: 79px;
   overflow: hidden;
-  position: relative;
-  }
+  position: fixed;
+  width: 100%;
+}
 
 .logo {
   background: url(../images/logo.png) transparent no-repeat center top;
@@ -22,7 +23,8 @@ nav {
   margin-top: 0.5%;
   width: 5em;
   min-height: 103px;
-  position: absolute; }
+  position: absolute; 
+  }
 
 ul.nav-links {
   list-style-type: none;
@@ -79,7 +81,7 @@ ul.nav-links li.icon {
     background-color: rgba(0,0,0,0.6);
     min-height: 7em;
     overflow: hidden;
-    
+    position: absolute;
     }
   .logo {
     background: url(../images/logo.png) transparent no-repeat center top;
