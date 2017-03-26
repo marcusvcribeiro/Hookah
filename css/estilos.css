@@ -134,9 +134,13 @@ ul.nav-links li.icon {
     display: block;
     text-align: center; } }
 
-.Footer {
+.footer {
   background: #000;
-  height: 30em; }
+  color: #fff;
+  height: 20em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around; }
 
 .parallaxNarguile {
   background: url("../images/parallaxNarguile.jpg") no-repeat center;
@@ -329,9 +333,20 @@ ul.nav-links li.icon {
   background-color: #000;
   width: 100%;
   height: 44em; }
+  .mapa iframe {
+    border: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #000; }
+  .mapa .desliga-frame {
+    pointer-events: none; }
 
 @media (max-width: 420px) {
   .mapa {
     height: 30em; }
-    .mapa iframe {
-      height: 100%; } }
+    .mapa .mapa-iframe {
+      height: 100%;
+      pointer-events: none; }
+      .mapa .mapa-iframe:active {
+        pointer-events: auto; } }
