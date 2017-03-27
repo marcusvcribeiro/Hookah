@@ -6,7 +6,6 @@ body {
   width: 1200px;
   margin: 0 auto; }
 
-/*RESPONSIVO HEADER*/
 .fundo1 {
   background: url(../images/fundo1.jpg) no-repeat center bottom;
   background-size: cover;
@@ -24,11 +23,11 @@ nav {
   width: 100%; }
 
 .logo {
-  background: url(../images/logo.png) transparent no-repeat center top;
+  background: url(../images/hookahlogo.png) transparent no-repeat center top;
   background-size: 100%;
   margin-left: 10%;
   margin-top: 0.5%;
-  width: 5em;
+  width: 8em;
   min-height: 103px;
   position: absolute; }
 
@@ -37,18 +36,12 @@ ul.nav-links {
   margin: 0 10% 0 0;
   padding: 0;
   overflow: hidden;
-  background-color: transparent;
-  /* height: 69px; */ }
+  background-color: transparent; }
 
 ul.nav-links li {
   float: right;
   padding-top: 3%;
   height: 130px; }
-
-ul.nav-links li:hover {
-  background-color: #ff3e00;
-  -webkit-transform: translateY(-2%);
-  transform: translateY(-2%); }
 
 ul.nav-links li a {
   display: inline-block;
@@ -56,12 +49,10 @@ ul.nav-links li a {
   text-align: center;
   padding: 0.5em;
   text-decoration: none;
-  /*transition: 0.3s;*/
   font-size: 1.8rem; }
 
 ul.nav-links li a:hover {
-  background-color: #ff3e00;
-  /*padding-bottom: 1%;*/ }
+  color: #ff3e00; }
 
 ul.nav-links li.icon {
   display: none; }
@@ -69,6 +60,7 @@ ul.nav-links li.icon {
 .glyphicon2 {
   display: none; }
 
+/*RESPONSIVO HEADER*/
 @media (max-width: 680px) {
   ul.nav-links li:not(:first-child) {
     display: none;
@@ -85,11 +77,8 @@ ul.nav-links li.icon {
     overflow: hidden;
     position: absolute; }
   .logo {
-    background: url(../images/logo.png) transparent no-repeat center top;
+    background: url(../images/hookahlogo.jpg) transparent no-repeat center top;
     background-size: 100%;
-    /* margin-left: 38%; */
-    /* margin-top: 0.5%; */
-    /* margin-bottom: 5%; */
     width: 15%;
     height: auto;
     position: absolute;
@@ -113,9 +102,10 @@ ul.nav-links li.icon {
     margin: 0; }
   ul.nav-links.responsive {
     position: relative;
-    padding-top: 30%;
-    transition: 1.3s;
-    text-align: center; }
+    padding-top: 25%;
+    transition: 1.5s;
+    text-align: center;
+    padding-left: 4em; }
   ul.nav-links.responsive li.icon {
     position: absolute;
     right: 0;
@@ -140,7 +130,59 @@ ul.nav-links li.icon {
   height: 20em;
   display: flex;
   align-items: flex-start;
-  justify-content: space-around; }
+  justify-content: space-around;
+  text-align: center; }
+  .footer .logo-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .footer .logo-footer .logof {
+      width: 13em;
+      height: 13em;
+      background: url(../images/hookahlogo.jpg) no-repeat center;
+      background-size: cover; }
+    .footer .logo-footer h5 {
+      text-align: center; }
+  .footer .contato-footer p {
+    text-align: center; }
+  .footer .social-footer .midias-sociais {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .footer .social-footer .midias-sociais iframe {
+      padding: 0.1em; }
+
+@media (max-width: 420px) {
+  .footer {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .footer h3 {
+      font-size: 1.2em; }
+    .footer .logo-footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .footer .logo-footer .logof {
+        width: 9em;
+        height: 9em;
+        background: url(../images/hookahlogo.jpg) no-repeat center;
+        background-size: cover; }
+      .footer .logo-footer h5 {
+        text-align: center;
+        font-size: 0.9em; }
+    .footer .contato-footer p {
+      text-align: center;
+      font-size: 0.9em; }
+    .footer .social-footer .midias-sociais {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .footer .social-footer .midias-sociais iframe {
+        padding: 0.1em; } }
 
 .parallaxNarguile {
   background: url("../images/parallaxNarguile.jpg") no-repeat center;

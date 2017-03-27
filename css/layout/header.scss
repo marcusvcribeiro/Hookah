@@ -1,4 +1,4 @@
-/*RESPONSIVO HEADER*/
+
 .fundo1 {
     background: url(../images/fundo1.jpg) no-repeat center bottom;
     background-size: cover;
@@ -17,11 +17,11 @@ nav {
 }
 
 .logo {
-  background: url(../images/logo.png) transparent no-repeat center top;
+  background: url(../images/hookahlogo.png) transparent no-repeat center top;
   background-size: 100%;
   margin-left: 10%;
   margin-top: 0.5%;
-  width: 5em;
+  width: 8em;
   min-height: 103px;
   position: absolute; 
   }
@@ -32,7 +32,6 @@ ul.nav-links {
   padding: 0;
   overflow: hidden;
   background-color: rgba(0,0,0,0);
-  /* height: 69px; */
   }
 
 ul.nav-links li {
@@ -41,10 +40,10 @@ ul.nav-links li {
   height: 130px;
   }
 
-ul.nav-links li:hover {
-  background-color: #ff3e00;
-  -webkit-transform: translateY(-2%);
-  transform: translateY(-2%); }
+// ul.nav-links li:hover {
+//   background-color: #ff3e00;
+//   -webkit-transform: translateY(-2%);
+//   transform: translateY(-2%); }
 
 ul.nav-links li a {
   display: inline-block;
@@ -52,13 +51,13 @@ ul.nav-links li a {
   text-align: center;
   padding: 0.5em;
   text-decoration: none;
-  /*transition: 0.3s;*/
+  
   font-size: 1.8rem;
   }
 
 ul.nav-links li a:hover {
-  background-color: #ff3e00;
-  /*padding-bottom: 1%;*/ }
+  color: #ff3e00;
+  }
 
 ul.nav-links li.icon {
   display: none; }
@@ -66,7 +65,7 @@ ul.nav-links li.icon {
     display: none;
 }
 
-
+/*RESPONSIVO HEADER*/
 @media (max-width: 680px) {
   ul.nav-links li:not(:first-child) {
     display: none;
@@ -84,11 +83,8 @@ ul.nav-links li.icon {
     position: absolute;
     }
   .logo {
-    background: url(../images/logo.png) transparent no-repeat center top;
+    background: url(../images/hookahlogo.jpg) transparent no-repeat center top;
     background-size: 100%;
-    /* margin-left: 38%; */
-    /* margin-top: 0.5%; */
-    /* margin-bottom: 5%; */
     width: 15%;
     height: auto;
     position: absolute;
@@ -114,9 +110,10 @@ ul.nav-links li.icon {
     margin: 0; }
   ul.nav-links.responsive {
     position: relative;
-    padding-top: 30%;
-    transition: 1.3s;
+    padding-top: 25%;
+    transition: 1.5s;
     text-align: center;
+    padding-left: 4em;
     }
   ul.nav-links.responsive li.icon {
     position: absolute;
