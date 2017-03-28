@@ -1,34 +1,61 @@
-.cardapio{
-  height: 82em;
-
-  .descricaoCardapio{
+.cardapio {
+    height: 82em;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 32em;
-    background: red;
-
-    .iconFood{
-      background: url('../images/spaghetti.png') no-repeat center;
-      background-size: cover;
-      height: 40px;
+    flex-direction: column;
+    .descricaoCardapio {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 15%;
+        background: #FFF;
+        h3 {
+            font-size: 3em;
+        }
     }
-    .iconBeer{
-      background: url('../images/beer.png') no-repeat center;
-      background-size: cover;
+    .icones {
+        height: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .iconBeer {
+            width: 20%;
+            background: url('../images/beer.png') no-repeat center;
+            background-size: contain;
+            height: 50%;
+        }
+        .iconNargui {
+            width: 20%;
+            background: url('../images/hookah.png') no-repeat center;
+            background-size: contain;
+            height: 50%;
+        }
+        .iconFoodBar {
+            width: 20%;
+            background: url('../images/covered-food-tray-on-a-hand-of-hotel-room-service.png') no-repeat center;
+            background-size: contain;
+            height: 50%;
+        }
     }
-    .iconNargui{
-      background: url('../images/hookah.png') no-repeat center;
-      background-size: cover;
+    .containerCardapio {
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #fafaf3;
+        .cardapioImg {
+            background: url('../images/cardapioImg.jpg') no-repeat center;
+            height: 100%;
+            background-size: cover;
+            width: 40%;
+        }
+        .cardapioItens {
+            background: url('../images/menuItens.png') no-repeat center;
+            height: 100%;
+            background-size: cover;
+            width: 60%;
+        }
     }
-    .iconFoodBar{
-      background: url('../images/covered-food-tray-on-a-hand-of-hotel-room-service.png') no-repeat center;
-      background-size: cover;
-    }
-  }
-  .cardapioImg{
-    height: 50em;
-    background: url('../images/foto1.jpg') no-repeat center;
-    background-size: cover;
-  }
 }

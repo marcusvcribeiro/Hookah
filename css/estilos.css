@@ -65,10 +65,10 @@ ul.nav-links li.icon {
   ul.nav-links li:not(:first-child) {
     display: none;
     padding-top: 40px; }
+
   ul.nav-links li.icon {
     float: right;
     display: block; } }
-
 @media (max-width: 680px) {
   .nav {
     margin: auto;
@@ -76,6 +76,7 @@ ul.nav-links li.icon {
     min-height: 7em;
     overflow: hidden;
     position: absolute; }
+
   .logo {
     background: url(../images/hookahlogo.jpg) transparent no-repeat center top;
     background-size: 100%;
@@ -84,6 +85,7 @@ ul.nav-links li.icon {
     position: absolute;
     z-index: 9;
     top: 1.2em; }
+
   .glyphicon2 {
     position: relative;
     top: 2.6em;
@@ -98,32 +100,38 @@ ul.nav-links li.icon {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+
   ul.nav-links {
     margin: 0; }
+
   ul.nav-links.responsive {
     position: relative;
     padding-top: 25%;
     transition: 1.5s;
     text-align: center;
     padding-left: 4em; }
+
   ul.nav-links.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
     padding-bottom: 20px; }
+
   ul.nav-links.responsive li:first-child {
     float: none;
     display: inline; }
+
   ul.nav-links.responsive li {
     float: none;
     display: inline; }
+
   ul.nav-links.responsive li a {
     display: block;
     text-align: center; }
+
   ul.nav-links.responsive li a {
     display: block;
     text-align: center; } }
-
 .footer {
   background: #000;
   color: #fff;
@@ -183,7 +191,6 @@ ul.nav-links li.icon {
       flex-wrap: wrap; }
       .footer .social-footer .midias-sociais iframe {
         padding: 0.1em; } }
-
 .parallaxNarguile {
   background: url("../images/parallaxNarguile.jpg") no-repeat center;
   height: 40em;
@@ -227,6 +234,7 @@ ul.nav-links li.icon {
     height: 20em; }
     .parallaxNarguile p {
       font-size: 1.8em; }
+
   .about {
     height: auto;
     width: 100%;
@@ -241,7 +249,6 @@ ul.nav-links li.icon {
         font-size: 1em; }
     .about .aboutImg {
       display: none; } }
-
 .galeria {
   height: 85em;
   background: #ccc; }
@@ -249,7 +256,7 @@ ul.nav-links li.icon {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 14em;
+    height: 20%;
     background: #000; }
     .galeria .topoGaleria h3 {
       font-size: 4em;
@@ -258,115 +265,166 @@ ul.nav-links li.icon {
   .galeria .fotoGaleria {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    height: 80%; }
     .galeria .fotoGaleria .textoFoto {
       display: flex;
       align-items: center;
       height: 100%;
       text-align: center;
       justify-content: space-around;
-      font-size: 5em;
+      font-size: 3em;
       text-align: center;
       opacity: 0; }
     .galeria .fotoGaleria .textoFoto:hover {
       opacity: 1;
       color: red; }
     .galeria .fotoGaleria .foto1 {
-      width: 33%;
-      height: 330px;
+      width: 33.3%;
+      height: 33.3%;
       background: url("../images/foto1.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto1:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 1px #fff;
+      cursor: pointer; }
     .galeria .fotoGaleria .foto2 {
-      width: 34%;
-      height: 330px;
+      width: 33.3%;
+      height: 33.3%;
       background: url("../images/foto2.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto2:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 1px #fff; }
     .galeria .fotoGaleria .foto3 {
-      width: 33%;
-      height: 330px;
+      width: 33.3%;
+      height: 33.3%;
       background: url("../images/foto3.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto3:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 1px #fff; }
     .galeria .fotoGaleria .foto4 {
-      width: 33%;
-      height: 330px;
+      width: 33.3%;
+      height: 33.3%;
       background: url("../images/foto4.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto4:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1); }
     .galeria .fotoGaleria .foto5 {
-      width: 34%;
-      height: 330px;
+      width: 33.3%;
+      height: 33.3%;
       background: url("../images/foto5.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto5:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1); }
     .galeria .fotoGaleria .foto6 {
-      width: 33%;
-      height: 330px;
-      background: url("../images/foto6.jpg") no-repeat center;
+      width: 33.3%;
+      height: 33.3%;
+      background: url("../images/foto6.jpeg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto6:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1); }
     .galeria .fotoGaleria .foto7 {
       width: 25%;
-      height: 330px;
+      height: 33.3%;
       background: url("../images/foto7.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto7:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1); }
     .galeria .fotoGaleria .foto8 {
       width: 25%;
-      height: 330px;
+      height: 33.3%;
       background: url("../images/foto8.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto8:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1); }
     .galeria .fotoGaleria .foto9 {
       width: 25%;
-      height: 330px;
+      height: 33.3%;
       background: url("../images/foto9.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto9:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1); }
     .galeria .fotoGaleria .foto10 {
       width: 25%;
-      height: 330px;
+      height: 33.3%;
       background: url("../images/foto10.jpg") no-repeat center;
       background-size: cover; }
     .galeria .fotoGaleria .foto10:hover {
-      opacity: .6; }
+      filter: brightness(50%);
+      transition: 0.3s;
+      transform: scale(1.1); }
 
 .cardapio {
-  height: 82em; }
+  height: 82em;
+  display: flex;
+  flex-direction: column; }
   .cardapio .descricaoCardapio {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 15%;
+    background: #FFF; }
+    .cardapio .descricaoCardapio h3 {
+      font-size: 3em; }
+  .cardapio .icones {
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .cardapio .icones .iconBeer {
+      width: 20%;
+      background: url("../images/beer.png") no-repeat center;
+      background-size: contain;
+      height: 50%; }
+    .cardapio .icones .iconNargui {
+      width: 20%;
+      background: url("../images/hookah.png") no-repeat center;
+      background-size: contain;
+      height: 50%; }
+    .cardapio .icones .iconFoodBar {
+      width: 20%;
+      background: url("../images/covered-food-tray-on-a-hand-of-hotel-room-service.png") no-repeat center;
+      background-size: contain;
+      height: 50%; }
+  .cardapio .containerCardapio {
+    height: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 32em;
-    background: red; }
-    .cardapio .descricaoCardapio .iconFood {
-      background: url("../images/spaghetti.png") no-repeat center;
+    background: #fafaf3; }
+    .cardapio .containerCardapio .cardapioImg {
+      background: url("../images/cardapioImg.jpg") no-repeat center;
+      height: 100%;
       background-size: cover;
-      height: 40px; }
-    .cardapio .descricaoCardapio .iconBeer {
-      background: url("../images/beer.png") no-repeat center;
-      background-size: cover; }
-    .cardapio .descricaoCardapio .iconNargui {
-      background: url("../images/hookah.png") no-repeat center;
-      background-size: cover; }
-    .cardapio .descricaoCardapio .iconFoodBar {
-      background: url("../images/covered-food-tray-on-a-hand-of-hotel-room-service.png") no-repeat center;
-      background-size: cover; }
-  .cardapio .cardapioImg {
-    height: 50em;
-    background: url("../images/foto1.jpg") no-repeat center;
-    background-size: cover; }
+      width: 40%; }
+    .cardapio .containerCardapio .cardapioItens {
+      background: url("../images/menuItens.png") no-repeat center;
+      height: 100%;
+      background-size: cover;
+      width: 60%; }
 
 .mapa {
   display: flex;
