@@ -1,6 +1,20 @@
+@mixin padrao-galeria($width) {
+    width: $width;
+    height: 33.4%;
+    background-size: cover;
+    
+}
+@mixin padrao-galeria-hover {
+    filter: brightness(110%);
+    transition: 0.3s;
+    transform: scale(1.1);   
+    // box-shadow: 0 1px 3px 3px #fff; 
+    // border: 0 1px 3px 3px #fff; 
+}
 .galeria {
     height: 85em;
     background: #ccc;
+
     .topoGaleria {
         display: flex;
         align-items: center;
@@ -18,6 +32,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         height: 80%;
+        
         .textoFoto {
             display: flex;
             align-items: center;
@@ -27,124 +42,90 @@
             font-size: 3em;
             text-align: center;
             opacity: 0;
+            &:hover {
+                opacity: 1;
+                color: red;
+            }            
         }
-        .textoFoto:hover {
-            opacity: 1;
-            color: red;
-        }
+
         .foto1 {
-            width: 33.3%;
-            height: 33.3%;
             background: url('../images/foto1.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(33.33%); 
+            &:hover {
+                @include padrao-galeria-hover;   
+            }            
         }
-        .foto1:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-            box-shadow: 2px 2px 1px #fff;
-            cursor: pointer;
-        }
-        .foto2 {
-            width: 33.3%;
-            height: 33.3%;
+
+        .foto2 {            
             background: url('../images/foto2.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(33.33%);
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
-        .foto2:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-            box-shadow: 2px 2px 1px #fff;
-        }
-        .foto3 {
-            width: 33.3%;
-            height: 33.3%;
+
+        .foto3 { 
             background: url('../images/foto3.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(33.33%); 
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
-        .foto3:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-            box-shadow: 2px 2px 1px #fff;
-        }
-        .foto4 {
-            width: 33.3%;
-            height: 33.3%;
+
+        .foto4 {         
             background: url('../images/foto4.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(33.33%); 
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
-        .foto4:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-        }
-        .foto5 {
-            width: 33.3%;
-            height: 33.3%;
+
+        .foto5 {         
             background: url('../images/foto5.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(33.33%); 
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
-        .foto5:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-        }
-        .foto6 {
-            width: 33.3%;
-            height: 33.3%;
+
+        .foto6 {          
             background: url('../images/foto6.jpeg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(33.33%);
+            &:hover {
+                @include padrao-galeria-hover;
+            }             
         }
-        .foto6:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-        }
-        .foto7 {
-            width: 25%;
-            height: 33.3%;
+
+        .foto7 {          
             background: url('../images/foto7.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(25%);
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
-        .foto7:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-        }
-        .foto8 {
-            width: 25%;
-            height: 33.3%;
+
+        .foto8 {          
             background: url('../images/foto8.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(25%);
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
-        .foto8:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-        }
-        .foto9 {
-            width: 25%;
-            height: 33.3%;
+
+        .foto9 {          
             background: url('../images/foto9.jpg') no-repeat center;
-            background-size: cover;
+            @include padrao-galeria(25%);
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
-        .foto9:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
-        }
-        .foto10 {
-            width: 25%;
-            height: 33.3%;
+
+        .foto10 {          
             background: url('../images/foto10.jpg') no-repeat center;
-            background-size: cover;
-        }
-        .foto10:hover {
-            filter: brightness(50%);
-            transition: 0.3s;
-            transform: scale(1.1);
+            @include padrao-galeria(25%);
+            &:hover {
+                @include padrao-galeria-hover;
+            }            
         }
     }
 }
