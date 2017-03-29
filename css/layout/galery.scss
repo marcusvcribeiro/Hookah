@@ -2,19 +2,19 @@
     width: $width;
     height: 33.4%;
     background-size: cover;
-    
 }
+
 @mixin padrao-galeria-hover {
     filter: brightness(110%);
     transition: 0.3s;
-    transform: scale(1.1);   
-    // box-shadow: 0 1px 3px 3px #fff; 
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px #fff;
     // border: 0 1px 3px 3px #fff; 
 }
+
 .galeria {
     height: 85em;
     background: #ccc;
-
     .topoGaleria {
         display: flex;
         align-items: center;
@@ -32,7 +32,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         height: 80%;
-        
         .textoFoto {
             display: flex;
             align-items: center;
@@ -45,87 +44,77 @@
             &:hover {
                 opacity: 1;
                 color: red;
-            }            
+            }
         }
-
         .foto1 {
             background: url('../images/foto1.jpg') no-repeat center;
-            @include padrao-galeria(33.33%); 
+            @include padrao-galeria(33.33%);
             &:hover {
-                @include padrao-galeria-hover;   
-            }            
+                @include padrao-galeria-hover;
+            }
         }
-
-        .foto2 {            
+        .foto2 {
             background: url('../images/foto2.jpg') no-repeat center;
             @include padrao-galeria(33.33%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
-
-        .foto3 { 
+        .foto3 {
             background: url('../images/foto3.jpg') no-repeat center;
-            @include padrao-galeria(33.33%); 
+            @include padrao-galeria(33.33%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
-
-        .foto4 {         
+        .foto4 {
             background: url('../images/foto4.jpg') no-repeat center;
-            @include padrao-galeria(33.33%); 
+            @include padrao-galeria(33.33%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
-
-        .foto5 {         
+        .foto5 {
             background: url('../images/foto5.jpg') no-repeat center;
-            @include padrao-galeria(33.33%); 
+            @include padrao-galeria(33.33%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
-
-        .foto6 {          
+        .foto6 {
             background: url('../images/foto6.jpeg') no-repeat center;
             @include padrao-galeria(33.33%);
             &:hover {
                 @include padrao-galeria-hover;
-            }             
+            }
         }
-
-        .foto7 {          
+        .foto7 {
             background: url('../images/foto7.jpg') no-repeat center;
             @include padrao-galeria(25%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
-
-        .foto8 {          
+        .foto8 {
             background: url('../images/foto8.jpg') no-repeat center;
             @include padrao-galeria(25%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
-
-        .foto9 {          
+        .foto9 {
             background: url('../images/foto9.jpg') no-repeat center;
             @include padrao-galeria(25%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
-
-        .foto10 {          
+        .foto10 {
             background: url('../images/foto10.jpg') no-repeat center;
             @include padrao-galeria(25%);
             &:hover {
                 @include padrao-galeria-hover;
-            }            
+            }
         }
     }
 }
