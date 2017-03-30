@@ -6,6 +6,11 @@ body {
   width: 1200px;
   margin: 0 auto; }
 
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: 17em; }
+
 .fundo1 {
   background: url(../images/fundo1.jpg) no-repeat center bottom;
   background-size: cover;
@@ -221,7 +226,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto1:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto2 {
       background: url("../images/foto2.jpg") no-repeat center;
       width: 33.33%;
@@ -230,7 +236,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto2:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto3 {
       background: url("../images/foto3.jpg") no-repeat center;
       width: 33.33%;
@@ -239,7 +246,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto3:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto4 {
       background: url("../images/foto4.jpg") no-repeat center;
       width: 33.33%;
@@ -248,7 +256,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto4:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto5 {
       background: url("../images/foto5.jpg") no-repeat center;
       width: 33.33%;
@@ -257,7 +266,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto5:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto6 {
       background: url("../images/foto6.jpeg") no-repeat center;
       width: 33.33%;
@@ -266,7 +276,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto6:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto7 {
       background: url("../images/foto7.jpg") no-repeat center;
       width: 25%;
@@ -275,7 +286,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto7:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto8 {
       background: url("../images/foto8.jpg") no-repeat center;
       width: 25%;
@@ -284,7 +296,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto8:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto9 {
       background: url("../images/foto9.jpg") no-repeat center;
       width: 25%;
@@ -293,7 +306,8 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto9:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
     .galeria .fotoGaleria .foto10 {
       background: url("../images/foto10.jpg") no-repeat center;
       width: 25%;
@@ -302,7 +316,12 @@ ul.nav-links li.icon {
       .galeria .fotoGaleria .foto10:hover {
         filter: brightness(110%);
         transition: 0.3s;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px #fff; }
+
+@media (max-width: 420px) {
+  .fotoGaleria {
+    display: none !important; } }
 
 .cardapio {
   height: 82em;

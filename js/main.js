@@ -32,3 +32,37 @@ $(".nav li a").click(function() {
     }, 700);
     return false;
 });
+
+        $(document).ready(function() {
+            // e.preventDefault();
+            if ($(window.matchMedia("(max-width: 420px)").matches)) {
+                $("galeria-responsiva").owlCarousel({
+                autoPlay: false,
+                slideSpeed : 700,
+                paginationSpeed : 700,
+                singleItem:true,
+                responsive: true,
+                navigation : false,
+                rewindNav : true,
+                scrollPerPage : false,
+            
+                });
+                // $("#owl-demo").removeClass("fotoGaleria");
+            } 
+            // if ($(window.matchMedia("(min-width: 421px)").matches)) {
+            //     // $('#owl-demo').removeAttr('id');
+            //      document.getElementById("owl-demo").setAttribute("id", "teste");
+            //     $("#teste").addClass("fotoGaleria");    
+            //     $("div").removeClass("owl-carousel");
+            //     $("div").removeClass("owl-theme");
+            //     $("div").removeClass("owl-wrapper");
+            //     $("div").removeClass("owl-wrapper-outer");
+            //     $("div").removeClass("owl-controls");
+            //     $("div").removeClass("owl-item");
+            //     $("div").removeClass("clickable");
+                
+                
+            // }
+
+        
+        });

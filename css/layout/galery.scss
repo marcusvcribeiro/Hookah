@@ -118,3 +118,9 @@
         }
     }
 }
+
+@media(max-width: 420px){
+    .fotoGaleria {
+        display: none !important;
+    }
+}
