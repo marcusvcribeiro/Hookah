@@ -5,11 +5,11 @@
 }
 
 @mixin padrao-galeria-hover {
-    filter: brightness(110%);
+    filter: brightness(90%);
     transition: 0.3s;
     transform: scale(1.1);
-    box-shadow: 3px 3px 3px #fff;
-    // border: 0 1px 3px 3px #fff; 
+    box-shadow: 0px 1px 20px 7px #fdde59;
+    
 }
 
 .galeria {
