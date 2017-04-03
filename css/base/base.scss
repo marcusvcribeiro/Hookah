@@ -11,23 +11,21 @@ body {
 }
 
 
-// @media(min-width: 421px){
-//   .center {
-//     display: none !important;
-//   }
+@media(min-width: 421px){
+  .responsive {
+    display: none !important;
+  }
 
-//   .slider {
-//     display: none !important;
-//   }
-//    .slick-initialized {
-//      display: none !important;
-//    }
-//    .slick-slider{
-// display: none !important;
-//    }
-// }
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: 17em;
+  .slider {
+    display: none !important;
+  }
+   .slick-initialized {
+     display: none !important;
+   }
+   .slick-slider{
+display: none !important;
+   }
+   .slick-dotted{
+display: none !important;
+   }
 }

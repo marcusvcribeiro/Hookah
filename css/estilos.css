@@ -6,10 +6,17 @@ body {
   width: 1200px;
   margin: 0 auto; }
 
-#owl-demo .item img {
-  display: block;
-  width: 100%;
-  height: 17em; }
+@media (min-width: 421px) {
+  .responsive {
+    display: none !important; }
+  .slider {
+    display: none !important; }
+  .slick-initialized {
+    display: none !important; }
+  .slick-slider {
+    display: none !important; }
+  .slick-dotted {
+    display: none !important; } }
 
 .fundo1 {
   background: url(../images/fundo1.jpg) no-repeat center bottom;
@@ -149,7 +156,7 @@ ul.nav-links li.icon {
     box-shadow: 2px 2px 2px; }
 
 .about {
-  height: 40em;
+  height: 41em;
   width: 100%;
   display: flex;
   justify-content: space-between; }
@@ -167,6 +174,26 @@ ul.nav-links li.icon {
     background-size: 100%;
     height: 100%;
     width: 50%; }
+
+@media (min-width: 421px) and (max-width: 767px) {
+  .parallaxNarguile {
+    height: 20em; }
+    .parallaxNarguile h1 {
+      font-size: 1.8em; }
+  .about {
+    height: auto;
+    width: 100%;
+    flex-flow: row wrap; }
+    .about .aboutDescricao {
+      height: auto;
+      width: auto;
+      padding: 1.3em; }
+      .about .aboutDescricao h1 {
+        font-size: 2.4em; }
+      .about .aboutDescricao p {
+        font-size: 1em; }
+    .about .aboutImg {
+      display: none; } }
 
 @media (max-width: 420px) {
   .parallaxNarguile {
@@ -206,18 +233,6 @@ ul.nav-links li.icon {
     flex-direction: row;
     flex-wrap: wrap;
     height: 80%; }
-    .galeria .fotoGaleria .textoFoto {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      text-align: center;
-      justify-content: space-around;
-      font-size: 3em;
-      text-align: center;
-      opacity: 0; }
-      .galeria .fotoGaleria .textoFoto:hover {
-        opacity: 1;
-        color: red; }
     .galeria .fotoGaleria .foto1 {
       background: url("../images/foto1.jpg") no-repeat center;
       width: 33.33%;
@@ -320,8 +335,44 @@ ul.nav-links li.icon {
         box-shadow: 0px 1px 20px 7px #FFF; }
 
 @media (max-width: 420px) {
+  .galeria {
+    height: auto; }
+    .galeria .topoGaleria {
+      padding: 1em; }
+      .galeria .topoGaleria h3 {
+        font-size: 3em; }
   .fotoGaleria {
-    display: none !important; } }
+    display: none !important; }
+  .responsive .foto1 {
+    background: url("../images/foto1.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto2 {
+    background: url("../images/foto2.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto3 {
+    background: url("../images/foto3.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto4 {
+    background: url("../images/foto4.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto5 {
+    background: url("../images/foto5.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto6 {
+    background: url("../images/foto6.jpeg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto7 {
+    background: url("../images/foto7.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto8 {
+    background: url("../images/foto8.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto9 {
+    background: url("../images/foto9.jpg") no-repeat center;
+    background-size: cover; }
+  .responsive .foto10 {
+    background: url("../images/foto10.jpg") no-repeat center;
+    background-size: cover; } }
 
 .cardapio {
   height: 82em;

@@ -18,7 +18,7 @@
   }
 }
 .about {
-  height: 40em;
+  height: 41em;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -43,6 +43,35 @@
     height: 100%;
     width: 50%;
   }
+}
+@media(min-width: 421px) and (max-width: 767px){
+  .parallaxNarguile{
+  height: 20em;
+  h1{
+    font-size: 1.8em;
+  }
+}
+.about {
+  height: auto;
+  width: 100%;
+  flex-flow: row wrap;
+  .aboutDescricao{
+    height: auto;
+    width: auto;
+    padding: 1.3em;
+    h1{
+      font-size: 2.4em;
+      
+    }
+    p{
+      font-size: 1em;
+
+    }
+  }
+  .aboutImg{
+    display: none;
+  }
+}
 }
 @media(max-width: 420px){
   .parallaxNarguile{

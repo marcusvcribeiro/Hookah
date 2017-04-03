@@ -31,20 +31,20 @@
         flex-direction: row;
         flex-wrap: wrap;
         height: 80%;
-        .textoFoto {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            text-align: center;
-            justify-content: space-around;
-            font-size: 3em;
-            text-align: center;
-            opacity: 0;
-            &:hover {
-                opacity: 1;
-                color: red;
-            }
-        }
+        // .textoFoto {
+        //     display: flex;
+        //     align-items: center;
+        //     height: 100%;
+        //     text-align: center;
+        //     justify-content: space-around;
+        //     font-size: 3em;
+        //     text-align: center;
+        //     opacity: 0;
+        //     &:hover {
+        //         opacity: 1;
+        //         color: red;
+        //     }
+        // }
         .foto1 {
             background: url('../images/foto1.jpg') no-repeat center;
             @include padrao-galeria(33.33%);
@@ -119,7 +119,60 @@
 }
 
 @media(max-width: 420px) {
+    .galeria {
+        height: auto;
+        .topoGaleria {
+            padding: 1em;
+            h3 {
+                font-size: 3em;
+            }
+        }        
+    }
+
     .fotoGaleria {
         display: none !important;
+        
     }
+    .responsive {
+        .foto1 {
+            background: url('../images/foto1.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto2 {
+            background: url('../images/foto2.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto3 {
+            background: url('../images/foto3.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto4 {
+            background: url('../images/foto4.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto5 {
+            background: url('../images/foto5.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto6 {
+            background: url('../images/foto6.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        .foto7 {
+            background: url('../images/foto7.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto8 {
+            background: url('../images/foto8.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto9 {
+            background: url('../images/foto9.jpg') no-repeat center;
+            background-size: cover;
+        }
+        .foto10 {
+            background: url('../images/foto10.jpg') no-repeat center;
+            background-size: cover;
+        }   
+    } 
 }
