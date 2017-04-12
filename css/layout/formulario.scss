@@ -1,0 +1,13 @@
+#formulario {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: url('../images/bg3.jpg') no-repeat center;
+    background-size: cover;
+    height: 40em;
+    color: #fff;
+    input {
+        margin-top: 20px;
+    }
+}

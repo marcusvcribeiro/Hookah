@@ -409,7 +409,7 @@ ul.nav-links li.icon {
       background-size: contain;
       height: 50%; }
   .cardapio .containerCardapio {
-    height: 60%;
+    height: 65%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -564,3 +564,15 @@ ul.nav-links li.icon {
       flex-wrap: wrap; }
       .footer .social-footer .midias-sociais iframe {
         padding: 0.1em; } }
+
+#formulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background: url("../images/bg3.jpg") no-repeat center;
+  background-size: cover;
+  height: 40em;
+  color: #fff; }
+  #formulario input {
+    margin-top: 20px; }
