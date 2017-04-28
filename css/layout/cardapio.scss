@@ -106,16 +106,13 @@
             flex-wrap: wrap;
             background: #fafaf3;
             .cardapioImg {
-                background: url('../images/cardapioImg.jpg') no-repeat center;
-                height: 100%;
-                background-size: cover;
-                width: 40%;
+                display: none;
             }
             .cardapioItens {
                 background: url('../images/menuItens.png') no-repeat center;
-                height: 100%;
+                height: 80%;
                 background-size: cover;
-                width: 60%;
+                width: 100%;
             }
         }
     }

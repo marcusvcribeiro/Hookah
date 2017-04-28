@@ -7,7 +7,53 @@
     background-size: cover;
     height: 48em;
     color: #fff;
-    input {
-        margin-top: 20px;
+    // input {
+    //     margin-top: 1em;
+    // }
+    p {
+        padding: 0 1em;
     }
+    form {
+        padding: 0 1em;
+
+        input {
+            padding: 0.5em;
+            border: 1px solid black;
+            border-radius: 4px;
+            color: #000;
+        }
+
+        button {
+            color: #000;
+        }
+    }
+
+}
+
+@media(max-width: 420px){
+     #formulario form {
+padding: 3em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    width: 100%;
+
+         input {
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #000;
+    margin: 0.3em;
+    /* width: 100%; */
+        }
+
+        input[type="submit"] {
+            color: #000;
+            text-transform: uppercase;
+            background: indianred;
+            font-weight: bold;
+        }
+    }   
 }
