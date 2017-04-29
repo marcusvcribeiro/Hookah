@@ -7,10 +7,7 @@ function navBarEffect() {
     }
 }
 
-function scrollMenu(){
-    var nav = document.getElementsByClassName("menuLink");
-    window.scrollTo(0,nav.offsetTop - 20);
-}
+
 
 // MAPA
 $(document).ready(function() {
@@ -34,7 +31,7 @@ $(document).ready(function() {
 var $doc = $('html, body');
 $(".nav li a").click(function() {
     $doc.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
+        scrollTop: $($.attr(this, 'href')).offset().top -100
     }, 800);
     return false;
 });
