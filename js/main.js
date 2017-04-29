@@ -7,6 +7,12 @@ function navBarEffect() {
     }
 }
 
+function scrollMenu(){
+    var nav = document.getElementsByClassName("menuLink");
+    window.scrollTo(0,nav.offsetTop - 20);
+}
+
+// MAPA
 $(document).ready(function() {
     $('#map').addClass('desliga-frame'); // set the mouse events to none when doc is ready
 
@@ -29,104 +35,60 @@ var $doc = $('html, body');
 $(".nav li a").click(function() {
     $doc.animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 700);
+    }, 800);
     return false;
 });
 
-//RESIZE
-        // $(document).ready(function() {
-        //     if ($(window.matchMedia("(max-width: 420px)").matches)) {
-
-        //     } 
-        // });
-
-//SLICK
-        $('.responsive').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        swipeToSlide: true,
-        
-        infinite: true,
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 0,
-                slidesToScroll: 0,
-                infinite: false,
-                dots: false
-            }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-        });
-
-
+// MASCARA DA DATA
 function mascaraData(inputData, e){
 
-var tecla;
+    var tecla;
 
-if(document.all) // Internet Explorer
-tecla = event.keyCode;
-else //Outros Browsers
-tecla = e.which;
+    if(document.all) // Internet Explorer
+    tecla = event.keyCode;
+    else //Outros Browsers
+    tecla = e.which;
 
-if(tecla >= 48 && tecla < 58){ // numeros de 0 a 9 e '/'
-var data = inputData.value;
+    if(tecla >= 48 && tecla < 58){ // numeros de 0 a 9 e '/'
+    var data = inputData.value;
 
-//validar o dia do mês
-if (data.length == 2){
-if(inputData.value >= 1 && inputData.value <= 31) {
-data += '/';
-inputData.value = data;
-return true;
-}
-else
-return false;
+    //validar o dia do mês
+    if (data.length == 2){
+    if(inputData.value >= 1 && inputData.value <= 31) {
+    data += '/';
+    inputData.value = data;
+    return true;
+    }
+    else
+    return false;
+    }
+
+    //validar o mês (de 1 a 12)
+    if (data.length == 5){
+    mes = data[3]+""+data[4];
+    if(mes >= 1 && mes < 13) {
+    data += '/';
+    inputData.value = data;
+    return true;
+    }
+    else
+    return false;
+    }
+
+    //validar o ano (de 1900 a 2100)
+    if (data.length == 8){
+    ano = data[6]+""+data[7];
+    if(ano >= 19 && ano <= 21){
+    inputData.value = data;
+    return true;
+    }
+    else
+    return false;
+    }
+
+    }else if(tecla == 8 || tecla == 0) // Backspace, Delete e setas direcionais(para mover o cursor, apenas para FF)
+    return true;
+    else
+    return false;
 }
 
-//validar o mês (de 1 a 12)
-if (data.length == 5){
-mes = data[3]+""+data[4];
-if(mes >= 1 && mes < 13) {
-data += '/';
-inputData.value = data;
-return true;
-}
-else
-return false;
-}
-
-//validar o ano (de 1900 a 2100)
-if (data.length == 8){
-ano = data[6]+""+data[7];
-if(ano >= 19 && ano <= 21){
-inputData.value = data;
-return true;
-}
-else
-return false;
-}
-
-}else if(tecla == 8 || tecla == 0) // Backspace, Delete e setas direcionais(para mover o cursor, apenas para FF)
-return true;
-else
-return false;
-}

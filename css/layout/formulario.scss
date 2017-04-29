@@ -23,8 +23,11 @@
             color: #000;
         }
 
-        button {
+        input[type="submit"] {
             color: #000;
+            text-transform: uppercase;
+            background: indianred;
+            font-weight: bold;
         }
     }
 
