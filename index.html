@@ -84,17 +84,35 @@
     <section id="formulario">
         <h2>Faca sua Reserva</h2>
         <p>Preencha o formulário abaixo para solicitar uma reserva no Blá. Entraremos em contato o mais breve possível para confirmação. Obrigado.</p>
-        <form>
-            <input type="" name="" placeholder="Nome">
-            <input type="email" placeholder="E-mail">
-            <input type="text" placeholder="Telefone">
-            <input type="text" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)">
-            <input type="text" placeholder="Horario">
-            <input type="text" placeholder="Quantidade de Pessoas">
-            <input type="submit" value="Enviar">
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwNIMIXuPxHRp4ZOc_oeOrv1lVOJTc47ehN5PCio9DTgmjk5whw/exec" target="hidden_iframe">
+            <input type="" name="Nome" placeholder="Nome">
+            <input type="email" name="E-mail" placeholder="E-mail" onblur="validacaoEmail(f1.email)"  maxlength="60">
+            <input type="text" name="Telefone" placeholder="Telefone com DDD" id="telefone" maxlength="15"onkeyup="mascara( this, mtel );">
+            <input type="text" name="Data" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)">
+            <input type="text" name="Horario" placeholder="Horario - HH:MM" id="horario" maxlength="5">
+            <input type="number" name="Quantidade" placeholder="Quantidade de Pessoas">
+            <input type="submit" value="Enviar" id="myBtn">
         </form>
 
-        
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Obrigado!</h2>
+            </div>
+            <div class="modal-body">
+            <p>Pela sua reserva.</p>
+            <p>Em breve entraremos em contato.</p>
+            </div>
+
+        </div>
+
+        </div>        
     </section>
 
 
@@ -129,9 +147,15 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>
+    <script src="js/min/jquery.js"></script>
+    <script src="js/min/jquery-mask.js"></script>
     <script src="js/smoke.js"></script>
     <script src="js/main.js"></script>
+    <!--SCRIPTS GOOGLE FORMS PARA ESTILIZAR O EMAIL-->
+        <!--<script data-cfasync="false" src="js/form-submission-handler.js"></script>  -->
+        <!--<script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>-->
+    <!--FIM SCRIPTS GOOGLE FORM-->
     <script>
         var canvas = document.getElementById('canvas')
         var ctx = canvas.getContext('2d')
@@ -158,6 +182,7 @@
         }, 100)
 
     </script>
+      
 </body>
 
 </html>
