@@ -85,21 +85,22 @@
         <h2>Faca sua Reserva</h2>
         <p>Preencha o formulário abaixo para solicitar uma reserva no Blá. Entraremos em contato o mais breve possível para confirmação. Obrigado.</p>
         <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwNIMIXuPxHRp4ZOc_oeOrv1lVOJTc47ehN5PCio9DTgmjk5whw/exec" target="hidden_iframe">
-            <input type="" name="Nome" placeholder="Nome">
-            <input type="email" name="E-mail" placeholder="E-mail" onblur="validacaoEmail(f1.email)" maxlength="60">
-            <input type="text" name="Telefone" placeholder="Telefone com DDD" id="telefone" maxlength="15" onkeyup="mascara( this, mtel );">
-            <input type="text" name="Data" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)">
-            <input type="text" name="Horario" placeholder="Horario - HH:MM" id="horario" maxlength="5">
-            <input type="number" name="Quantidade" placeholder="Quantidade de Pessoas">
+            <input type="text" name="Nome" placeholder="Nome" required>
+            <input type="email" name="E-mail" placeholder="E-mail" onblur="validacaoEmail(f1.email)" maxlength="60" required>
+            <input type="text" name="Telefone" placeholder="Telefone com DDD" id="telefone" maxlength="15" onkeyup="mascara( this, mtel );" required>
+            <input type="text" name="Data" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)" required>
+            <input type="text" name="Horario" placeholder="Horario - HH:MM" id="horario" maxlength="5" required>
+            <input type="number" name="Quantidade" placeholder="Quantidade de Pessoas" required>
+            <!--<input type="submit" value="Enviar" required>-->
             <input type="submit" value="Enviar" id="myBtn">
         </form>
 
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
 
-        <!-- The Modal -->
+        <!-- Modal do Form -->
         <div id="myModal" class="modal">
 
-            <!-- Modal content -->
+            <!-- Conteúdo do Modal -->
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>

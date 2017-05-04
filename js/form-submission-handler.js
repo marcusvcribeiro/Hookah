@@ -1,8 +1,8 @@
 
-function validEmail(email) { // see:
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
-}
+// function validEmail(email) { // see:
+//   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+//   return re.test(email);
+// }
 // get all data in form and return object
 function getFormData() {
   var elements = document.getElementById("gform").elements; // all form elements
@@ -45,10 +45,13 @@ function getFormData() {
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
-  if( !validEmail(data.email) ) {   // if email is not valid show error
-    document.getElementById('email-invalid').style.display = 'block';
-    return false;
-  } else {
+  // if( !validEmail(data.email) ) {   // if email is not valid show error
+  //   // document.getElementById('email-invalid').style.display = 'block';
+  //   // document.getElementById("email-invalid").innerHTML = "<font color='red'>E-mail inválido </font>";
+  //   alert("E-mail invalido");
+  //   console.log("E-mail invalido");
+  //   return false;
+  // } else {
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
@@ -57,8 +60,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
-        document.getElementById('gform').style.display = 'none'; // hide form
-        document.getElementById('thankyou_message').style.display = 'block';
+        // document.getElementById('gform').style.display = 'none'; // hide form
+        // document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
     // url encode form data for sending as post data
@@ -66,7 +69,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
     }).join('&')
     xhr.send(encoded);
-  }
+  // }
 }
 function loaded() {
   console.log('contact form submission handler loaded successfully');
