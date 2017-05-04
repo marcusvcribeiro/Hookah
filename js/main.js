@@ -31,92 +31,92 @@ $(document).ready(function() {
 var $doc = $('html, body');
 $(".nav li a").click(function() {
     $doc.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top -100
+        scrollTop: $($.attr(this, 'href')).offset().top - 128
     }, 800);
     return false;
 });
 
 // MASCARA DA DATA
-function mascaraData(inputData, e){
+function mascaraData(inputData, e) {
 
     var tecla;
 
-    if(document.all) // Internet Explorer
-    tecla = event.keyCode;
+    if (document.all) // Internet Explorer
+        tecla = event.keyCode;
     else //Outros Browsers
-    tecla = e.which;
+        tecla = e.which;
 
-    if(tecla >= 48 && tecla < 58){ // numeros de 0 a 9 e '/'
-    var data = inputData.value;
+    if (tecla >= 48 && tecla < 58) { // numeros de 0 a 9 e '/'
+        var data = inputData.value;
 
-    //validar o dia do mês
-    if (data.length == 2){
-    if(inputData.value >= 1 && inputData.value <= 31) {
-    data += '/';
-    inputData.value = data;
-    return true;
-    }
+        //validar o dia do mês
+        if (data.length == 2) {
+            if (inputData.value >= 1 && inputData.value <= 31) {
+                data += '/';
+                inputData.value = data;
+                return true;
+            } else
+                return false;
+        }
+
+        //validar o mês (de 1 a 12)
+        if (data.length == 5) {
+            mes = data[3] + "" + data[4];
+            if (mes >= 1 && mes < 13) {
+                data += '/';
+                inputData.value = data;
+                return true;
+            } else
+                return false;
+        }
+
+        //validar o ano (de 1900 a 2100)
+        if (data.length == 8) {
+            ano = data[6] + "" + data[7];
+            if (ano >= 19 && ano <= 21) {
+                inputData.value = data;
+                return true;
+            } else
+                return false;
+        }
+
+    } else if (tecla == 8 || tecla == 0) // Backspace, Delete e setas direcionais(para mover o cursor, apenas para FF)
+        return true;
     else
-    return false;
-    }
-
-    //validar o mês (de 1 a 12)
-    if (data.length == 5){
-    mes = data[3]+""+data[4];
-    if(mes >= 1 && mes < 13) {
-    data += '/';
-    inputData.value = data;
-    return true;
-    }
-    else
-    return false;
-    }
-
-    //validar o ano (de 1900 a 2100)
-    if (data.length == 8){
-    ano = data[6]+""+data[7];
-    if(ano >= 19 && ano <= 21){
-    inputData.value = data;
-    return true;
-    }
-    else
-    return false;
-    }
-
-    }else if(tecla == 8 || tecla == 0) // Backspace, Delete e setas direcionais(para mover o cursor, apenas para FF)
-    return true;
-    else
-    return false;
+        return false;
 }
 
 /* Máscaras ER */
-function mascara(o,f){
-    v_obj=o
-    v_fun=f
-    setTimeout("execmascara()",1)
+function mascara(o, f) {
+    v_obj = o
+    v_fun = f
+    setTimeout("execmascara()", 1)
 }
-function execmascara(){
-    v_obj.value=v_fun(v_obj.value)
+
+function execmascara() {
+    v_obj.value = v_fun(v_obj.value)
 }
-function mtel(v){
-    v=v.replace(/\D/g,"");             //Remove tudo o que não é dígito
-    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d)(\d{4})$/,"$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
+
+function mtel(v) {
+    v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+    v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
     return v;
 }
-function id( el ){
-	return document.getElementById( el );
+
+function id(el) {
+    return document.getElementById(el);
 }
-window.onload = function(){
-	id('telefone').onkeyup = function(){
-		mascara( this, mtel );
-	}
+window.onload = function() {
+    id('telefone').onkeyup = function() {
+        mascara(this, mtel);
+    }
 }
 
 /* MASCARA HORARIO */
-var mask = function (val) {
+var mask = function(val) {
     val = val.split(":");
-    return (parseInt(val[0]) > 19)? "HZ:M0" : "H0:M0";
+    return (parseInt(val[0]) > 19) ? "HZ:M0" : "H0:M0";
 }
 
 pattern = {
@@ -131,30 +131,29 @@ pattern = {
     placeholder: 'Horário - HH:MM'
 };
 
-$(document).ready(function () {
-  $("#horario").mask(mask, pattern);
+$(document).ready(function() {
+    $("#horario").mask(mask, pattern);
 });
 
 /*VALIDAR EMAIL */
 function validacaoEmail(field) {
     usuario = field.value.substring(0, field.value.indexOf("@"));
-    dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+    dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
 
-    if ((usuario.length >=1) &&
-        (dominio.length >=3) && 
-        (usuario.search("@")==-1) && 
-        (dominio.search("@")==-1) &&
-        (usuario.search(" ")==-1) && 
-        (dominio.search(" ")==-1) &&
-        (dominio.search(".")!=-1) &&      
-        (dominio.indexOf(".") >=1)&& 
+    if ((usuario.length >= 1) &&
+        (dominio.length >= 3) &&
+        (usuario.search("@") == -1) &&
+        (dominio.search("@") == -1) &&
+        (usuario.search(" ") == -1) &&
+        (dominio.search(" ") == -1) &&
+        (dominio.search(".") != -1) &&
+        (dominio.indexOf(".") >= 1) &&
         (dominio.lastIndexOf(".") < dominio.length - 1)) {
-    document.getElementById("msgemail").innerHTML="E-mail válido";
-    alert("E-mail valido");
-    }
-    else{
-    document.getElementById("msgemail").innerHTML="<font color='red'>E-mail inválido </font>";
-    alert("E-mail invalido");
+        document.getElementById("msgemail").innerHTML = "E-mail válido";
+        alert("E-mail valido");
+    } else {
+        document.getElementById("msgemail").innerHTML = "<font color='red'>E-mail inválido </font>";
+        alert("E-mail invalido");
     }
 }
 
