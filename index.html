@@ -85,12 +85,12 @@
         <h2>Faca sua Reserva</h2>
         <p>Preencha o formulário abaixo para solicitar uma reserva no Blá. Entraremos em contato o mais breve possível para confirmação. Obrigado.</p>
         <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwNIMIXuPxHRp4ZOc_oeOrv1lVOJTc47ehN5PCio9DTgmjk5whw/exec" target="hidden_iframe">
-            <input type="text" name="Nome" placeholder="Nome" required>
-            <input type="email" name="E-mail" placeholder="E-mail" onblur="validacaoEmail(f1.email)" maxlength="60" required>
+            <input type="text" name="Nome" placeholder="Nome" required id="nome">
+            <input type="email" name="E-mail" placeholder="E-mail" onblur="validacaoEmail(f1.email)" maxlength="60" required id="email">
             <input type="text" name="Telefone" placeholder="Telefone com DDD" id="telefone" maxlength="15" onkeyup="mascara( this, mtel );" required>
-            <input type="text" name="Data" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)" required>
-            <input type="text" name="Horario" placeholder="Horario - HH:MM" id="horario" maxlength="5" required>
-            <input type="number" name="Quantidade" placeholder="Quantidade de Pessoas" required>
+            <input type="text" name="Data" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)" required id="data">
+            <input type="text" name="Horario" placeholder="Horario - HH:MM" id="horario" maxlength="5" required id="horario">
+            <input type="number" name="Quantidade" placeholder="Quantidade de Pessoas" required id="qtd">
             <!--<input type="submit" value="Enviar" required>-->
             <input type="submit" value="Enviar" id="myBtn">
         </form>
