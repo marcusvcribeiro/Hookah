@@ -1,3 +1,4 @@
+@import 'base/base.scss';
 #formulario {
     display: flex;
     align-items: center;
@@ -10,6 +11,9 @@
     // input {
     //     margin-top: 1em;
     // }
+    #titulo {
+        @include titulos; 
+    }    
     p {
         padding: 0 1em;
     }

@@ -10,22 +10,8 @@ body {
   margin: 0 auto;
 }
 
-
-@media(min-width: 421px){
-  .responsive {
-    display: none !important;
-  }
-
-  .slider {
-    display: none !important;
-  }
-   .slick-initialized {
-     display: none !important;
-   }
-   .slick-slider{
-display: none !important;
-   }
-   .slick-dotted{
-display: none !important;
-   }
-}
+@mixin titulos {
+  font-size: 3.4em; 
+  color: #fff;
+  // text-transform: uppercase;
+} 

@@ -1,3 +1,4 @@
+@import 'base/base.scss';
 @mixin icones {
     width: 30%;
     background-size: contain;
@@ -14,11 +15,12 @@
     height: 82em;
     display: flex;
     flex-direction: column;
-    h3 {
+
+    #titulo {
+        @include titulos; 
         text-align: center;
-        font-size: 3em;
-        text-transform: uppercase;
         padding: 1em 0;
+        color: #000;
     }
     .icones {
         height: 25%;

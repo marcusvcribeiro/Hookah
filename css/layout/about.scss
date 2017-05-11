@@ -1,3 +1,4 @@
+@import 'base/base.scss';
 .parallaxNarguile{
   background: url('../images/parallaxNarguile.jpg') no-repeat center;
   height: 40em;
@@ -28,10 +29,12 @@
     height: 100%;
     width: 50%;
     padding: 2em;
-    h1{
-      font-size: 3.4em;
-      
+
+    #titulo {
+        @include titulos; 
+        color: #000;
     }
+
     p{
       font-size: 1.5em;
 

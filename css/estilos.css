@@ -6,18 +6,6 @@ body {
   width: 1200px;
   margin: 0 auto; }
 
-@media (min-width: 421px) {
-  .responsive {
-    display: none !important; }
-  .slider {
-    display: none !important; }
-  .slick-initialized {
-    display: none !important; }
-  .slick-slider {
-    display: none !important; }
-  .slick-dotted {
-    display: none !important; } }
-
 .fundo1 {
   background: url(../images/fundo1.jpg) no-repeat center bottom;
   background-size: cover;
@@ -157,6 +145,14 @@ ul.nav-links li.icon {
     width: 100%;
     height: 100%; } }
 
+/**BASE**/
+body {
+  font-family: "Roboto Slab", serif !important; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
 .parallaxNarguile {
   background: url("../images/parallaxNarguile.jpg") no-repeat center;
   height: 40em;
@@ -185,8 +181,10 @@ ul.nav-links li.icon {
     height: 100%;
     width: 50%;
     padding: 2em; }
-    .about .aboutDescricao h1 {
-      font-size: 3.4em; }
+    .about .aboutDescricao #titulo {
+      font-size: 3.4em;
+      color: #fff;
+      color: #000; }
     .about .aboutDescricao p {
       font-size: 1.5em; }
   .about .aboutImg {
@@ -235,6 +233,14 @@ ul.nav-links li.icon {
     .about .aboutImg {
       display: none; } }
 
+/**BASE**/
+body {
+  font-family: "Roboto Slab", serif !important; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
 .galeria {
   height: 85em;
   background: #ccc; }
@@ -247,6 +253,9 @@ ul.nav-links li.icon {
     .galeria .topoGaleria h3 {
       font-size: 4em;
       text-align: center;
+      color: #fff; }
+    .galeria .topoGaleria #titulo {
+      font-size: 3.4em;
       color: #fff; }
   .galeria .fotoGaleria {
     display: flex;
@@ -485,15 +494,24 @@ ul.nav-links li.icon {
           transform: scale(1.1);
           box-shadow: 0px 1px 20px 7px #FFF; } }
 
+/**BASE**/
+body {
+  font-family: "Roboto Slab", serif !important; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
 .cardapio {
   height: 82em;
   display: flex;
   flex-direction: column; }
-  .cardapio h3 {
+  .cardapio #titulo {
+    font-size: 3.4em;
+    color: #fff;
     text-align: center;
-    font-size: 3em;
-    text-transform: uppercase;
-    padding: 1em 0; }
+    padding: 1em 0;
+    color: #000; }
   .cardapio .icones {
     height: 25%;
     display: flex;
@@ -682,6 +700,14 @@ ul.nav-links li.icon {
       .footer .social-footer .midias-sociais iframe {
         padding: 0.1em; } }
 
+/**BASE**/
+body {
+  font-family: "Roboto Slab", serif !important; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
 #formulario {
   display: flex;
   align-items: center;
@@ -691,6 +717,9 @@ ul.nav-links li.icon {
   background-size: cover;
   height: 48em;
   color: #fff; }
+  #formulario #titulo {
+    font-size: 3.4em;
+    color: #fff; }
   #formulario p {
     padding: 0 1em; }
   #formulario form {
