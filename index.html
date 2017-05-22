@@ -82,20 +82,23 @@
     </section>
 
     <section id="formulario">
-        <h1 id="titulo">faça sua reserva</h1>
-        <p>Preencha o formulário abaixo para solicitar uma reserva no Blá. Entraremos em contato o mais breve possível para confirmação. Obrigado.</p>
-        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwNIMIXuPxHRp4ZOc_oeOrv1lVOJTc47ehN5PCio9DTgmjk5whw/exec" target="hidden_iframe">
-            <input type="text" name="Nome" placeholder="Nome" required id="nome">
-            <input type="email" name="E-mail" placeholder="E-mail" onblur="validacaoEmail(f1.email)" maxlength="60" required id="email">
-            <input type="text" name="Telefone" placeholder="Telefone com DDD" id="telefone" maxlength="15" onkeyup="mascara( this, mtel );" required>
-            <input type="text" name="Data" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)" required id="data">
-            <input type="text" name="Horario" placeholder="Horario - HH:MM" id="horario" maxlength="5" required id="horario">
-            <input type="number" name="Quantidade" placeholder="Quantidade de Pessoas" required id="qtd">
-            <!--<input type="submit" value="Enviar" required>-->
-            <input type="submit" value="Enviar" id="myBtn">
-        </form>
+        <div id="corpo_form">
+            <h1 id="titulo">Faça sua reserva</h1>
+            <!--<p>Preencha o formulário abaixo para solicitar uma reserva no Blá.  Obrigado.</p>-->
+            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwNIMIXuPxHRp4ZOc_oeOrv1lVOJTc47ehN5PCio9DTgmjk5whw/exec" >
+                <input type="text" name="Nome" placeholder="Nome" required id="nome">
+                <input type="email" name="E-mail" placeholder="E-mail" onblur="validacaoEmail(f1.email)" maxlength="60" required id="email">
+                <input type="text" name="Telefone" placeholder="Telefone com DDD" id="telefone" maxlength="15" onkeyup="mascara( this, mtel );" required>
+                <input type="text" name="Data" placeholder="Data - Dia/Mês/Ano" maxlength="10" onkeypress="return mascaraData(this,event)" required id="data">
+                <input type="text" name="Horario" placeholder="Horario - HH:MM" id="horario" maxlength="5" required id="horario">
+                <input type="number" name="Quantidade" placeholder="Quantidade de Pessoas" required id="qtd">
+                
+                <input type="submit" value="Enviar">
+            </form>            
+        </div>
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
+<!--
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:block; width: 500px; height: 500px; background: black;"></iframe>-->
 
         <!-- Modal do Form -->
         <div id="myModal" class="modal">
@@ -108,7 +111,7 @@
                 </div>
                 <div class="modal-body">
                     <p>Pela sua reserva.</p>
-                    <p>Em breve entraremos em contato.</p>
+                    <p>Entraremos em contato o mais breve possível para confirmação.</p>
                 </div>
 
             </div>
@@ -147,6 +150,8 @@
 
         </div>
     </footer>
+    <script data-cfasync="false" type="text/javascript"
+    src="js/form-submission-handler.js"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/min/jquery.js"></script>
     <script src="js/min/jquery-mask.js"></script>
