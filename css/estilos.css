@@ -6,6 +6,12 @@ body {
   width: 1200px;
   margin: 0 auto; }
 
+.header-container {
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  min-height: 50px; }
+
 .fundo1 {
   background: url(../images/fundo1.jpg) no-repeat center bottom;
   background-size: cover;
@@ -16,7 +22,7 @@ body {
 
 nav {
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 79px;
   overflow: hidden;
   position: fixed;
@@ -38,35 +44,29 @@ ul.nav-links {
   padding: 0;
   overflow: hidden;
   background-color: transparent; }
-
-ul.nav-links li {
-  float: right;
-  padding-top: 3%;
-  height: 130px; }
-
-ul.nav-links li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0.5em;
-  text-decoration: none;
-  font-size: 1.8rem; }
-
-ul.nav-links li a:hover {
-  color: #ff3e00; }
-
-ul.nav-links li a:visited {
-  padding-top: 5em;
-  transform: translateZ(40px);
-  transform: translateY(40px);
-  position: absolute;
-  top: -50px; }
-
-ul.nav-links li.icon {
-  display: none; }
-
-.glyphicon2 {
-  display: none; }
+  ul.nav-links li {
+    float: right;
+    padding-top: 3%;
+    height: 130px; }
+    ul.nav-links li a {
+      display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 0.5em;
+      text-decoration: none;
+      font-size: 1.8rem; }
+    ul.nav-links li a:hover {
+      color: #ff3e00; }
+    ul.nav-links li a:visited {
+      padding-top: 5em;
+      transform: translateZ(40px);
+      transform: translateY(40px);
+      position: absolute;
+      top: -50px; }
+    ul.nav-links li .icon {
+      display: none; }
+    ul.nav-links li .glyphicon2 {
+      display: none; }
 
 /*RESPONSIVO HEADER*/
 @media (width: 1024px) {
@@ -90,7 +90,7 @@ ul.nav-links li.icon {
 @media (max-width: 680px) {
   .nav {
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
     min-height: 7em;
     overflow: hidden;
     position: fixed; }
@@ -145,13 +145,12 @@ ul.nav-links li.icon {
     width: 100%;
     height: 100%; } }
 
-/**BASE**/
-body {
-  font-family: "Roboto Slab", serif !important; }
-
-.container {
-  width: 1200px;
-  margin: 0 auto; }
+@media (max-width: 320px) {
+  .logo {
+    width: 23%;
+    top: 1.3em; }
+  .glyphicon2 {
+    top: 1.6em; } }
 
 .parallaxNarguile {
   background: url("../images/parallaxNarguile.jpg") no-repeat center;
@@ -232,14 +231,6 @@ body {
         font-size: 1em; }
     .about .aboutImg {
       display: none; } }
-
-/**BASE**/
-body {
-  font-family: "Roboto Slab", serif !important; }
-
-.container {
-  width: 1200px;
-  margin: 0 auto; }
 
 .galeria {
   height: 85em;
@@ -494,14 +485,6 @@ body {
           transform: scale(1.1);
           box-shadow: 0px 1px 20px 7px #FFF; } }
 
-/**BASE**/
-body {
-  font-family: "Roboto Slab", serif !important; }
-
-.container {
-  width: 1200px;
-  margin: 0 auto; }
-
 .cardapio {
   height: 82em;
   display: flex;
@@ -571,7 +554,7 @@ body {
       align-items: center;
       flex-wrap: wrap;
       flex-direction: column;
-      padding-right: 3em; }
+      padding: 2.7em; }
       .cardapio .icones .iconBeer {
         background: url("../images/beer.png") no-repeat center;
         width: 45%;
@@ -612,6 +595,14 @@ body {
     height: 76%; } }
 
 @media (max-width: 320px) {
+  .cardapio .icones {
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3em; }
   .cardapio .containerCardapio .cardapioItens {
     height: 68%; } }
 
@@ -700,14 +691,6 @@ body {
       .footer .social-footer .midias-sociais iframe {
         padding: 0.1em; } }
 
-/**BASE**/
-body {
-  font-family: "Roboto Slab", serif !important; }
-
-.container {
-  width: 1200px;
-  margin: 0 auto; }
-
 #formulario {
   display: flex;
   align-items: center;
@@ -719,7 +702,8 @@ body {
   color: #fff; }
   #formulario #titulo {
     font-size: 3.4em;
-    color: #fff; }
+    color: #fff;
+    padding-left: 0.5em; }
   #formulario p {
     padding: 0 1em; }
   #formulario form {
@@ -852,7 +836,7 @@ body {
       font-weight: bold; }
   .modal-content {
     position: fixed;
-    top: 40rem !important;
+    top: 20rem !important;
     background-color: black !important;
     opacity: 1; }
   .modal-header {

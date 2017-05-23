@@ -1,4 +1,4 @@
-@import 'base/base.scss';
+@import 'base/helpers.scss';
 @mixin icones {
     width: 30%;
     background-size: contain;
@@ -83,7 +83,7 @@
             align-items: center;
             flex-wrap: wrap;
             flex-direction: column;
-            padding-right: 3em;
+            padding: 2.7em;
             .iconBeer {
                 background: url('../images/beer.png') no-repeat center;
                 @include icones-responsivo;
@@ -126,6 +126,15 @@
     }
 }
 @media(max-width:320px) {
+    .cardapio .icones { 
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3em;
+}
     .cardapio .containerCardapio .cardapioItens {
         height: 68%;
     }

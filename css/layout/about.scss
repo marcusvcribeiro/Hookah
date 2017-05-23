@@ -1,4 +1,4 @@
-@import 'base/base.scss';
+@import 'base/helpers.scss';
 .parallaxNarguile{
   background: url('../images/parallaxNarguile.jpg') no-repeat center;
   height: 40em;
@@ -6,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
   h1{

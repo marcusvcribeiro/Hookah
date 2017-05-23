@@ -2,7 +2,7 @@ var canvas = document.getElementById('canvas')
 var ctx = canvas.getContext('2d')
 
 canvas.width = innerWidth; //largura e altura da animação
-canvas.height = innerWidth;
+canvas.height = innerHeight;
 
 var party = smokemachine(ctx, [255, 255, 255, 0.1]) //cor da fumaça em rgba
 
@@ -21,3 +21,4 @@ onmousemove = function(e) {
 setInterval(function() {
     party.addsmoke(innerWidth / 2, innerHeight, 1)
 }, 100)
+

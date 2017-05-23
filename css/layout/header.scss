@@ -1,4 +1,9 @@
-
+.header-container {
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  min-height: 50px;
+}
 .fundo1 {
     background: url(../images/fundo1.jpg) no-repeat center bottom;
     background-size: cover;
@@ -9,7 +14,7 @@
 }
 nav {
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 79px;
   overflow: hidden;
   position: fixed;
@@ -33,45 +38,42 @@ ul.nav-links {
   padding: 0;
   overflow: hidden;
   background-color: rgba(0,0,0,0);
-  }
 
-ul.nav-links li {
-  float: right;
-  padding-top: 3%;
-  height: 130px;
-  }
+    li {
 
-// ul.nav-links li:hover {
-//   background-color: #ff3e00;
-//   -webkit-transform: translateY(-2%);
-//   transform: translateY(-2%); }
+      float: right;
+      padding-top: 3%;
+      height: 130px;
 
-ul.nav-links li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0.5em;
-  text-decoration: none;
-  
-  font-size: 1.8rem;
-  }
+      a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0.5em;
+        text-decoration: none;
+        font-size: 1.8rem;
+        } 
 
-ul.nav-links li a:hover {
-  color: #ff3e00;
-  }
-ul.nav-links li a:visited {
-  padding-top: 5em;
-  transform: translateZ(40px);
-  transform: translateY(40px);
-  position: absolute;
-  top: -50px;
-  }
+        a:hover {
+          color: #ff3e00;
+          }
 
-ul.nav-links li.icon {
-  display: none; }
-  .glyphicon2 {
-    display: none;
-}
+        a:visited {
+          padding-top: 5em;
+          transform: translateZ(40px);
+          transform: translateY(40px);
+          position: absolute;
+          top: -50px;
+          } 
+
+        .icon {
+          display: none; }
+          .glyphicon2 {
+            display: none;
+        }    
+
+      }  
+  }
 
 
 /*RESPONSIVO HEADER*/
@@ -99,7 +101,7 @@ ul.nav-links li.icon {
 @media (max-width: 680px) {
   .nav {
     margin: auto;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.9);
     min-height: 7em;
     overflow: hidden;
     position: fixed;
@@ -158,4 +160,17 @@ ul.nav-links li.icon {
       width: 100%;
       height: 100%;
     }
-    }
+    } 
+@media(max-width: 320px){
+  .logo {
+      width: 23%;
+
+      top: 1.3em;
+  }  
+  .glyphicon2 {
+
+      top: 1.6em;
+
+
+  }
+}
