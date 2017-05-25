@@ -11,9 +11,7 @@ var gulp = require ('gulp'),
     jshintStylish = require('jshint-stylish'),
     csslint = require('gulp-csslint'),
     autoprefixer = require('gulp-autoprefixer'),
-    sass = require('gulp-sass'),
-    bulkSass = require('gulp-sass-bulk-import'),
-    inject = require('gulp-inject');
+    sass = require('gulp-sass');
 
 /*Configuramos uma tarefa, mas não é nossa tarefa padrão, muito menos tem um nome. 
 No Gulp, precisamos executar nosso código através de tarefas e toda tarefa possui 
