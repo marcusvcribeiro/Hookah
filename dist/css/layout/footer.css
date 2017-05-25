@@ -1,0 +1,59 @@
+.footer {
+  background: #000;
+  color: #fff;
+  height: 20em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: center; }
+  .footer .logo-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .footer .logo-footer .logof {
+      width: 13em;
+      height: 13em;
+      background: url(../images/hookahlogo.jpg) no-repeat center;
+      background-size: cover; }
+    .footer .logo-footer h5 {
+      text-align: center; }
+  .footer .contato-footer p {
+    text-align: center; }
+  .footer .social-footer .midias-sociais {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .footer .social-footer .midias-sociais iframe {
+      padding: 0.1em; }
+
+@media (max-width: 420px) {
+  .footer {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .footer h3 {
+      font-size: 1.2em; }
+    .footer .logo-footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .footer .logo-footer .logof {
+        width: 9em;
+        height: 9em;
+        background: url(../images/hookahlogo.jpg) no-repeat center;
+        background-size: cover; }
+      .footer .logo-footer h5 {
+        text-align: center;
+        font-size: 0.9em; }
+    .footer .contato-footer p {
+      text-align: center;
+      font-size: 0.9em; }
+    .footer .social-footer .midias-sociais {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .footer .social-footer .midias-sociais iframe {
+        padding: 0.1em; } }

@@ -1,0 +1,252 @@
+.galeria {
+  height: 85em;
+  background: #ccc; }
+  .galeria .topoGaleria {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+    background: #000; }
+    .galeria .topoGaleria h3 {
+      font-size: 4em;
+      text-align: center;
+      color: #fff; }
+    .galeria .topoGaleria #titulo {
+      font-size: 3.4em;
+      color: #fff; }
+  .galeria .fotoGaleria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%; }
+    .galeria .fotoGaleria .foto1 {
+      background: url("../images/foto1.jpg") no-repeat center;
+      width: 33.33%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto1:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto2 {
+      background: url("../images/foto2.jpg") no-repeat center;
+      width: 33.33%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto2:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto3 {
+      background: url("../images/foto3.jpg") no-repeat center;
+      width: 33.33%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto3:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto4 {
+      background: url("../images/foto4.jpg") no-repeat center;
+      width: 33.33%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto4:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto5 {
+      background: url("../images/foto5.jpg") no-repeat center;
+      width: 33.33%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto5:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto6 {
+      background: url("../images/foto6.jpeg") no-repeat center;
+      width: 33.33%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto6:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto7 {
+      background: url("../images/foto7.jpg") no-repeat center;
+      width: 25%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto7:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto8 {
+      background: url("../images/foto8.jpg") no-repeat center;
+      width: 25%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto8:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto9 {
+      background: url("../images/foto9.jpg") no-repeat center;
+      width: 25%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto9:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+    .galeria .fotoGaleria .foto10 {
+      background: url("../images/foto10.jpg") no-repeat center;
+      width: 25%;
+      height: 33.4%;
+      background-size: cover; }
+      .galeria .fotoGaleria .foto10:hover {
+        filter: brightness(90%);
+        transition: 0.3s;
+        transform: scale(1.1);
+        box-shadow: 0px 1px 20px 7px #FFF; }
+
+@media (max-width: 420px) {
+  .galeria {
+    height: 85em;
+    background: #ccc; }
+    .galeria .topoGaleria {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 20%;
+      background: #000; }
+      .galeria .topoGaleria h3 {
+        font-size: 4em;
+        text-align: center;
+        color: #fff; }
+    .galeria .fotoGaleria {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 80%;
+      background: black; }
+      .galeria .fotoGaleria .foto1 {
+        background: url("../images/foto1.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto1:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto2 {
+        background: url("../images/foto2.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto2:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto3 {
+        background: url("../images/foto3.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto3:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto4 {
+        background: url("../images/foto4.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto4:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto5 {
+        background: url("../images/foto5.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto5:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto6 {
+        background: url("../images/foto6.jpeg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto6:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto7 {
+        background: url("../images/foto7.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto7:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto8 {
+        background: url("../images/foto8.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto8:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto9 {
+        background: url("../images/foto9.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto9:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; }
+      .galeria .fotoGaleria .foto10 {
+        background: url("../images/foto10.jpg") no-repeat center;
+        width: 50%;
+        height: 15%;
+        background-size: cover;
+        padding-top: 14em; }
+        .galeria .fotoGaleria .foto10:hover {
+          filter: brightness(90%);
+          transition: 0.3s;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 20px 7px #FFF; } }

@@ -1,0 +1,1 @@
+function navBarEffect(){var a=document.getElementById("topNav");"nav-links"===a.className?a.className+=" responsive":a.className="nav-links"}

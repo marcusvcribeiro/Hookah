@@ -1,0 +1,120 @@
+.cardapio {
+  height: 82em;
+  display: flex;
+  flex-direction: column; }
+  .cardapio #titulo {
+    font-size: 3.4em;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    color: #000; }
+  .cardapio .icones {
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .cardapio .icones .iconBeer {
+      background: url("../images/beer.png") no-repeat center;
+      width: 30%;
+      background-size: contain;
+      height: 50%; }
+    .cardapio .icones .iconNargui {
+      background: url("../images/hookah.png") no-repeat center;
+      width: 30%;
+      background-size: contain;
+      height: 50%; }
+    .cardapio .icones .iconFoodBar {
+      background: url("../images/covered-food-tray-on-a-hand-of-hotel-room-service.png") no-repeat center;
+      width: 30%;
+      background-size: contain;
+      height: 50%; }
+    .cardapio .icones .iconPeople {
+      background: url("../images/people.png") no-repeat center;
+      width: 30%;
+      background-size: contain;
+      height: 50%; }
+  .cardapio .containerCardapio {
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fafaf3; }
+    .cardapio .containerCardapio .cardapioImg {
+      background: url("../images/cardapioImg.jpg") no-repeat center;
+      height: 100%;
+      background-size: cover;
+      width: 40%; }
+    .cardapio .containerCardapio .cardapioItens {
+      background: url("../images/menuItens.png") no-repeat center;
+      height: 100%;
+      background-size: cover;
+      width: 60%; }
+
+@media (max-width: 420px) {
+  .cardapio {
+    height: 80em;
+    display: flex;
+    flex-direction: column; }
+    .cardapio h3 {
+      text-align: center;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      padding: 2em 0; }
+    .cardapio .icones {
+      height: 35%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 2.7em; }
+      .cardapio .icones .iconBeer {
+        background: url("../images/beer.png") no-repeat center;
+        width: 45%;
+        background-size: contain;
+        height: 50%; }
+      .cardapio .icones .iconNargui {
+        background: url("../images/hookah.png") no-repeat center;
+        width: 45%;
+        background-size: contain;
+        height: 50%; }
+      .cardapio .icones .iconFoodBar {
+        background: url("../images/covered-food-tray-on-a-hand-of-hotel-room-service.png") no-repeat center;
+        width: 45%;
+        background-size: contain;
+        height: 50%; }
+      .cardapio .icones .iconPeople {
+        background: url("../images/people.png") no-repeat center;
+        width: 45%;
+        background-size: contain;
+        height: 50%; }
+    .cardapio .containerCardapio {
+      height: 60%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      background: #fafaf3; }
+      .cardapio .containerCardapio .cardapioImg {
+        display: none; }
+      .cardapio .containerCardapio .cardapioItens {
+        background: url("../images/menuItens.png") no-repeat center;
+        height: 80%;
+        background-size: cover;
+        width: 100%; } }
+
+@media (max-width: 360px) {
+  .cardapio .containerCardapio .cardapioItens {
+    height: 76%; } }
+
+@media (max-width: 320px) {
+  .cardapio .icones {
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3em; }
+  .cardapio .containerCardapio .cardapioItens {
+    height: 68%; } }
