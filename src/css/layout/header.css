@@ -14,7 +14,7 @@
 
 nav {
   margin: auto;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 79px;
   overflow: hidden;
   position: fixed;
@@ -22,10 +22,10 @@ nav {
   z-index: 999999; }
 
 .logo {
-  background: url(../images/hookahlogo.png) transparent no-repeat center top;
+  background: url(../images/tacho1.png) transparent no-repeat center top;
   background-size: 100%;
   margin-left: 10%;
-  margin-top: 0.5%;
+  margin-top: 2%;
   width: 8em;
   min-height: 103px;
   position: absolute; }
@@ -38,7 +38,7 @@ ul.nav-links {
   background-color: transparent; }
   ul.nav-links li {
     float: right;
-    padding-top: 3%;
+    padding-top: 4%;
     height: 130px; }
     ul.nav-links li a {
       display: inline-block;
@@ -75,7 +75,11 @@ ul.nav-links {
 @media (width: 768px) {
   canvas {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+  ul.nav-links li {
+    float: right;
+    padding-top: 6% !important;
+    height: 120px; } }
 
 @media (max-width: 680px) {
   ul.nav-links li:not(:first-child) {
@@ -83,7 +87,8 @@ ul.nav-links {
     padding-top: 40px; }
   ul.nav-links li.icon {
     float: right;
-    display: block; } }
+    display: block;
+    color: #ffc657; } }
 
 @media (max-width: 680px) {
   .nav {
@@ -93,19 +98,20 @@ ul.nav-links {
     overflow: hidden;
     position: fixed; }
   .logo {
-    background: url(../images/hookahlogo.jpg) transparent no-repeat center top;
+    background: url(../images/tacho1.png) transparent no-repeat center top;
     background-size: 100%;
-    width: 15%;
+    width: 21%;
     height: auto;
     position: absolute;
     z-index: 9;
-    top: 1.2em; }
+    top: 2.3em; }
   .glyphicon2 {
     position: relative;
     top: 2.6em;
     padding-right: 1em;
     /* right: 0em; */
     font-size: 2em;
+    color: #ffc657;
     float: right;
     display: inline-block;
     font-family: 'Glyphicons Halflings';

@@ -1,7 +1,28 @@
 /**BASE**/
+/* Google fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+/* fontes do projeto */
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("src/fonts/Gotham-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url("src/fonts/Gotham-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
-  font-family: "Roboto Slab", serif !important; }
+  font-family: "Roboto", serif !important;
+  font-weight: lighter; }
 
 .container {
   width: 1200px;
   margin: 0 auto; }
+
+@media (max-width: 728px) {
+  body {
+    font-family: "Roboto", serif !important; } }

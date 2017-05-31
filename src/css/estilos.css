@@ -1,10 +1,47 @@
+/* Google fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+/* fontes do projeto */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("src/fonts/Gotham-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url("src/fonts/Gotham-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
 /**BASE**/
+/* Google fonts */
+/* fontes do projeto */
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("src/fonts/Gotham-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url("src/fonts/Gotham-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
-  font-family: "Roboto Slab", serif !important; }
+  font-family: "Roboto", serif !important;
+  font-weight: lighter; }
 
 .container {
   width: 1200px;
   margin: 0 auto; }
+
+@media (max-width: 728px) {
+  body {
+    font-family: "Roboto", serif !important; } }
 
 .header-container {
   width: 100%;
@@ -22,7 +59,7 @@ body {
 
 nav {
   margin: auto;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 79px;
   overflow: hidden;
   position: fixed;
@@ -30,10 +67,10 @@ nav {
   z-index: 999999; }
 
 .logo {
-  background: url(../images/hookahlogo.png) transparent no-repeat center top;
+  background: url(../images/tacho1.png) transparent no-repeat center top;
   background-size: 100%;
   margin-left: 10%;
-  margin-top: 0.5%;
+  margin-top: 2%;
   width: 8em;
   min-height: 103px;
   position: absolute; }
@@ -46,7 +83,7 @@ ul.nav-links {
   background-color: transparent; }
   ul.nav-links li {
     float: right;
-    padding-top: 3%;
+    padding-top: 4%;
     height: 130px; }
     ul.nav-links li a {
       display: inline-block;
@@ -83,7 +120,11 @@ ul.nav-links {
 @media (width: 768px) {
   canvas {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+  ul.nav-links li {
+    float: right;
+    padding-top: 6% !important;
+    height: 120px; } }
 
 @media (max-width: 680px) {
   ul.nav-links li:not(:first-child) {
@@ -91,7 +132,8 @@ ul.nav-links {
     padding-top: 40px; }
   ul.nav-links li.icon {
     float: right;
-    display: block; } }
+    display: block;
+    color: #ffc657; } }
 
 @media (max-width: 680px) {
   .nav {
@@ -101,19 +143,20 @@ ul.nav-links {
     overflow: hidden;
     position: fixed; }
   .logo {
-    background: url(../images/hookahlogo.jpg) transparent no-repeat center top;
+    background: url(../images/tacho1.png) transparent no-repeat center top;
     background-size: 100%;
-    width: 15%;
+    width: 21%;
     height: auto;
     position: absolute;
     z-index: 9;
-    top: 1.2em; }
+    top: 2.3em; }
   .glyphicon2 {
     position: relative;
     top: 2.6em;
     padding-right: 1em;
     /* right: 0em; */
     font-size: 2em;
+    color: #ffc657;
     float: right;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
@@ -188,7 +231,7 @@ ul.nav-links {
     padding: 2em; }
     .about .aboutDescricao #titulo {
       font-size: 3.4em;
-      color: #fff;
+      color: #ffc657;
       color: #000; }
     .about .aboutDescricao p {
       font-size: 1.5em; }
@@ -197,6 +240,18 @@ ul.nav-links {
     background-size: 100%;
     height: 100%;
     width: 50%; }
+
+@media (max-width: 768px) {
+  .parallaxNarguile {
+    background: url(../images/parallaxNarguile.jpg) no-repeat center;
+    height: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: inherit;
+    background-position: initial;
+    background-repeat: round;
+    background-size: cover; } }
 
 @media (min-width: 421px) and (max-width: 767px) {
   .parallaxNarguile {
@@ -220,7 +275,10 @@ ul.nav-links {
 
 @media (max-width: 420px) {
   .parallaxNarguile {
-    height: 20em; }
+    height: 20em;
+    width: 100%;
+    background-size: cover;
+    background-color: #000; }
     .parallaxNarguile h1 {
       font-size: 1.8em; }
   .about {
@@ -253,7 +311,7 @@ ul.nav-links {
       color: #fff; }
     .galeria .topoGaleria #titulo {
       font-size: 3.4em;
-      color: #fff; }
+      color: #ffc657; }
   .galeria .fotoGaleria {
     display: flex;
     flex-direction: row;
@@ -359,6 +417,16 @@ ul.nav-links {
         transition: 0.3s;
         transform: scale(1.1);
         box-shadow: 0px 1px 20px 7px #FFF; }
+
+@media (max-width: 768px) {
+  .galeria {
+    background-color: #ece9dc; }
+  .galeria .topoGaleria {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 14%;
+    background: #000; } }
 
 @media (max-width: 420px) {
   .galeria {
@@ -494,10 +562,11 @@ ul.nav-links {
 .cardapio {
   height: 82em;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #ece9dc; }
   .cardapio #titulo {
     font-size: 3.4em;
-    color: #fff;
+    color: #ffc657;
     text-align: center;
     padding: 1em 0;
     color: #000; }
@@ -542,6 +611,27 @@ ul.nav-links {
       height: 100%;
       background-size: cover;
       width: 60%; }
+
+@media (width: 768px) {
+  .cardapio .containerCardapio {
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #fafaf3; }
+  .cardapio #titulo {
+    font-size: 3.4em;
+    color: #ffc657;
+    text-align: center;
+    padding: 0em;
+    color: #000; }
+  .cardapio .containerCardapio .cardapioImg {
+    display: none; }
+  .cardapio .containerCardapio .cardapioItens {
+    background: url(../images/menuItens.png) no-repeat center;
+    height: 100%;
+    background-size: cover;
+    width: 100%; } }
 
 @media (max-width: 420px) {
   .cardapio {
@@ -610,7 +700,7 @@ ul.nav-links {
     flex-direction: row;
     padding: 3em; }
   .cardapio .containerCardapio .cardapioItens {
-    height: 68%; } }
+    height: 63%; } }
 
 .mapa {
   display: flex;
@@ -640,7 +730,7 @@ ul.nav-links {
 .footer {
   background: #000;
   color: #fff;
-  height: 20em;
+  height: 23em;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -651,20 +741,38 @@ ul.nav-links {
     flex-direction: column;
     flex-wrap: wrap; }
     .footer .logo-footer .logof {
-      width: 13em;
-      height: 13em;
-      background: url(../images/hookahlogo.jpg) no-repeat center;
-      background-size: cover; }
+      width: 13.5em;
+      height: 13.5em;
+      background: url(../images/tacho1.png) no-repeat center;
+      background-size: 100%; }
     .footer .logo-footer h5 {
       text-align: center; }
+  .footer h3 {
+    color: #ffc657; }
   .footer .contato-footer p {
-    text-align: center; }
+    text-align: center;
+    font-size: 0.9em; }
   .footer .social-footer .midias-sociais {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
     .footer .social-footer .midias-sociais iframe {
       padding: 0.1em; }
+
+@media (width: 768px) {
+  .footer {
+    background: #000;
+    color: #fff;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: center; }
+  .footer .social-footer .midias-sociais {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 3em; } }
 
 @media (max-width: 420px) {
   .footer {
@@ -682,8 +790,8 @@ ul.nav-links {
       .footer .logo-footer .logof {
         width: 9em;
         height: 9em;
-        background: url(../images/hookahlogo.jpg) no-repeat center;
-        background-size: cover; }
+        background: url(../images/tacho1.png) no-repeat center;
+        background-size: 100%; }
       .footer .logo-footer h5 {
         text-align: center;
         font-size: 0.9em; }
@@ -708,7 +816,7 @@ ul.nav-links {
   color: #fff; }
   #formulario #titulo {
     font-size: 3.4em;
-    color: #fff;
+    color: #ffc657;
     padding-left: 0.5em; }
   #formulario p {
     padding: 0 1em; }

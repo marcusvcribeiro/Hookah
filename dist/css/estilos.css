@@ -22,7 +22,7 @@ body {
 
 nav {
   margin: auto;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 79px;
   overflow: hidden;
   position: fixed;
@@ -30,10 +30,10 @@ nav {
   z-index: 999999; }
 
 .logo {
-  background: url(../images/hookahlogo.png) transparent no-repeat center top;
+  background: url(../images/tacho1.png) transparent no-repeat center top;
   background-size: 100%;
   margin-left: 10%;
-  margin-top: 0.5%;
+  margin-top: 2%;
   width: 8em;
   min-height: 103px;
   position: absolute; }
@@ -91,7 +91,8 @@ ul.nav-links {
     padding-top: 40px; }
   ul.nav-links li.icon {
     float: right;
-    display: block; } }
+    display: block;
+    color: #ffc657; } }
 
 @media (max-width: 680px) {
   .nav {
@@ -101,19 +102,20 @@ ul.nav-links {
     overflow: hidden;
     position: fixed; }
   .logo {
-    background: url(../images/hookahlogo.jpg) transparent no-repeat center top;
+    background: url(../images/tacho1.png) transparent no-repeat center top;
     background-size: 100%;
-    width: 15%;
+    width: 21%;
     height: auto;
     position: absolute;
     z-index: 9;
-    top: 1.2em; }
+    top: 2.3em; }
   .glyphicon2 {
     position: relative;
     top: 2.6em;
     padding-right: 1em;
     /* right: 0em; */
     font-size: 2em;
+    color: #ffc657;
     float: right;
     display: inline-block;
     font-family: 'Glyphicons Halflings';
@@ -220,7 +222,10 @@ ul.nav-links {
 
 @media (max-width: 420px) {
   .parallaxNarguile {
-    height: 20em; }
+    height: 20em;
+    width: 100%;
+    background-size: cover;
+    background-color: #000; }
     .parallaxNarguile h1 {
       font-size: 1.8em; }
   .about {
@@ -610,7 +615,7 @@ ul.nav-links {
     flex-direction: row;
     padding: 3em; }
   .cardapio .containerCardapio .cardapioItens {
-    height: 68%; } }
+    height: 63%; } }
 
 .mapa {
   display: flex;
@@ -651,10 +656,10 @@ ul.nav-links {
     flex-direction: column;
     flex-wrap: wrap; }
     .footer .logo-footer .logof {
-      width: 13em;
-      height: 13em;
-      background: url(../images/hookahlogo.jpg) no-repeat center;
-      background-size: cover; }
+      width: 13.5em;
+      height: 13.5em;
+      background: url(../images/tacho1.png) no-repeat center;
+      background-size: 100%; }
     .footer .logo-footer h5 {
       text-align: center; }
   .footer .contato-footer p {
@@ -682,8 +687,8 @@ ul.nav-links {
       .footer .logo-footer .logof {
         width: 9em;
         height: 9em;
-        background: url(../images/hookahlogo.jpg) no-repeat center;
-        background-size: cover; }
+        background: url(../images/tacho1.png) no-repeat center;
+        background-size: 100%; }
       .footer .logo-footer h5 {
         text-align: center;
         font-size: 0.9em; }

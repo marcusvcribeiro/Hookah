@@ -47,6 +47,19 @@
     width: 50%;
   }
 }
+@media(max-width: 768px){
+.parallaxNarguile {
+    background: url(../images/parallaxNarguile.jpg) no-repeat center;
+    height: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: inherit;
+    background-position: initial;
+    background-repeat: round;
+    background-size: cover;
+}  
+}
 @media(min-width: 421px) and (max-width: 767px){
   .parallaxNarguile{
   height: 20em;
@@ -78,7 +91,13 @@
 }
 @media(max-width: 420px){
   .parallaxNarguile{
-  height: 20em;
+
+    height: 20em;
+    width: 100%;
+    background-size: cover;
+    background-color: #000;
+
+
   h1{
     font-size: 1.8em;
   }

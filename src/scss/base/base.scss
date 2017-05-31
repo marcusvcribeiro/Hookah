@@ -1,11 +1,19 @@
 /**BASE**/
+@import 'src/scss/fonts/fonts.scss';
 body {
-  font-family: "Roboto Slab", serif !important;
+  font-family: "Roboto", serif !important;
+  font-weight: lighter;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+@media(max-width: 728px){
+  body {
+    font-family: "Roboto", serif !important;
+  }  
 }
 
 

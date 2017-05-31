@@ -78,7 +78,13 @@
 }
 @media(max-width: 420px){
   .parallaxNarguile{
-  height: 20em;
+
+    height: 20em;
+    width: 100%;
+    background-size: cover;
+    background-color: #000;
+
+
   h1{
     font-size: 1.8em;
   }

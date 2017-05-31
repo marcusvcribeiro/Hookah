@@ -1,0 +1,24 @@
+/* Google fonts */
+// @import url(http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+$serrat: 'Montserrat';
+
+/* fontes do projeto */
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('src/fonts/Gotham-Medium.otf') format('opentype'),;
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('src/fonts/Gotham-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
